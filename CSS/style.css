@@ -1,0 +1,5 @@
+/* never contain HTML Tags */
+h2{
+    background-color: teal;
+    color: white;
+}

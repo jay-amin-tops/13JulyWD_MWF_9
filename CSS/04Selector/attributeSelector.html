@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[title] {
+            color: purple;
+            background-color: violet;
+        }
+
+        a[href="https://example.org"] {
+            color: green;
+        }
+
+        /* <a> elements with an href ending ".org" */
+        a[href$=".org"] {
+            font-style: italic;
+        }
+
+        /* <a> elements whose class attribute contains the word "logo" */
+        a[class~="logo"] {
+            padding: 2px;
+            background-color: teal;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <blockquote>
+        <div>
+            /* &lt;a&gt; elements with a title attribute */
+            a[title] {
+            color: purple;
+            }
+            <a href="#">Without Title</a>
+            <a href="#" title="hint">with Title</a>
+        </div>
+        <div>
+            /* &lt;a&gt; elements with an href matching "https://example.org" */
+            a[href="https://example.org"] {
+            color: green;
+            }
+            <a href="#">Without Title</a>
+            <a href="https://example.org">Webiste name</a>
+        </div>
+        <div>
+            /* &lt;a&gt; elements with an href ending ".org" */
+            a[href$=".org"] {
+            font-style: italic;
+            }
+            <a href="#">Without Title</a>
+            <a href="https://something.org">Webiste name</a>
+        </div>
+        <div>
+            /* &lt;a&gt; elements whose class attribute contains the word "logo" */
+                a[class~="logo"] {
+                  padding: 2px;
+                }
+            <a href="#">Without Title</a>
+            <a href="https://something.org">Webiste name</a>
+            <a class="data form-control" href="https://something.org">Webiste name</a>
+            <a class="data logo form-control" href="https://something.org">class with logo name</a>
+        </div>
+
+    </blockquote>
+</body>
+
+</html>
