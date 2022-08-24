@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 300px;
+        }
+
+        .background-color {
+            background-color: grey;
+        }
+
+        .background-image {
+            background-image: url(../images/img1.jpeg);
+        }
+
+        .background-attachment {
+            background-image: url(../images/img10.jpeg);
+            background-attachment: fixed;
+        }
+
+        .background-clip {
+            background-image: url(../images/img10.jpeg);
+            border: 15px dotted orangered;
+            /* margin: 10px */
+            padding: 50px;
+            background-clip: content-box;
+            /* background-clip: padding-box; */
+            /* background-clip: border-box; */
+        }
+
+        .background-origin {
+            background-image: url(../images/img10.jpeg);
+            border: 15px dotted orangered;
+            padding: 50px;
+            /* background-origin: border-box; */
+            background-origin: content-box;
+        }
+
+        .background-position {
+            background-image: url(../images/img10.jpeg);
+            border: 15px dotted orangered;
+            padding: 50px;
+            /* background-position:50% 20% ; */
+            background-position:center ;
+        }
+        
+        .background-repeat {
+            background-image: url(../images/img10.jpeg);
+            border: 15px dotted orangered;
+            padding: 50px;
+            /* background-repeat:repeat-x ; */
+            /* background-repeat:repeat-y ; */
+            background-repeat:no-repeat;
+            background-position:center ;
+        }
+
+        .background-size {
+            background-image: url(../images/img10.jpeg);
+            border: 15px dotted orangered;
+            padding: 50px;
+            background-repeat:no-repeat;
+            background-position:center ;
+            /* background-size:contain ; */
+            background-size:cover ;
+        }
+        .background-shorthand {
+            background: url(../images/img10.jpeg)no-repeat center center /cover;
+            border: 15px dotted orangered;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-attachment</li>
+        <li>background-clip</li>
+        <li>background-origin</li>
+        <li>background-position</li>
+        <li>background-repeat</li>
+        <li>background-size</li>
+    </ul>
+
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-shorthand">background-shorthand</div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a{ color: orangered; } */
+        a:visited {
+            color: rgb(124, 35, 2);
+        }
+
+        a:link {
+            color: rgb(2, 79, 124);
+        }
+
+        a:focus {
+            color: rgb(124, 2, 89);
+            outline: 1px solid rgb(124, 35, 2);
+        }
+        a:hover {
+            font-size: 18px;
+        }
+        .p-cust::first-letter{
+            font-size: 36px;
+        }
+        .p-cust::first-line{
+            color: firebrick;    
+        }
+        .p-cust::selection{
+            background-color:orangered ;
+            color: white;
+        }
+        button:disabled{
+            background-color: yellowgreen;
+        }
+        input:checked{
+            outline: 2px solid red;
+        }
+        input:required{
+            outline: 2px solid rgb(238, 143, 11);
+        }
+        input:valid{
+            outline: 2px solid green;
+        }
+        input:invalid{
+            outline: 2px solid rgb(90, 7, 5);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.other.com">other</a>
+    <input type="text" name="" id="">
+    <p class="p-cust">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum neque, alias optio atque sequi quis similique quod? Nihil, modi a ea quae aliquid distinctio excepturi! Ipsam cum deleniti iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto dolores dignissimos quaerat commodi quod quia non, maiores deserunt vel magnam culpa qui eligendi ullam ex! Ad non iste cumque.</p>
+    <button >Click me normal</button>
+    <button disabled>Click me disabled</button>
+    <form method="post">
+        <input type="checkbox" name="" id="">
+        <input type="email" name="" id="" required>
+    </form>
+</body>
+
+</html>

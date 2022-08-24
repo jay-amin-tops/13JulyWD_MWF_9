@@ -21,6 +21,11 @@
             font-style: italic;
         }
 
+        /* <a> elements with an href contain "col" */
+        a[href*="col"] {
+            font-style: italic;
+        }
+
         /* <a> elements whose class attribute contains the word "logo" */
         a[class~="logo"] {
             padding: 2px;
@@ -66,7 +71,9 @@
             <a class="data form-control" href="https://something.org">Webiste name</a>
             <a class="data logo form-control" href="https://something.org">class with logo name</a>
         </div>
-
+        <div class="col"></div>
+        <div class="col row"></div>
+        <div class="col row data"></div>
     </blockquote>
 </body>
 
