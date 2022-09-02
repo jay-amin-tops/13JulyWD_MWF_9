@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border-outline{
+            border: 20px dashed grey;
+            outline: 20px dotted orangered ;
+            margin: 20px;
+            padding: 20px;
+        }
+        a{
+            border-left: 2px solid goldenrod;
+        }
+        a:hover{
+            /* border: 5px solid green; */
+            outline: 5px solid green;
+        }
+        .box{
+            display: inline-block;
+            /* height: 200px;
+            width: 300px;
+            border-top: 50px;
+            border-left: 0px;
+            border-right: 0px;
+            border-style: double;
+            border-bottom: 50px; */
+            border: 20px solid rgb(70, 0, 0);
+            /* border-radius: 20px; */
+            /* border-radius: 50%; */
+            border-radius: 20px 10px 20px 50px;
+        }
+        .box1{
+            width: 200px;
+            display: inline-block;
+            border: 20px solid rgb(70, 0, 0);
+            border-radius: 50px 0px 50px 0px;
+            transition: all .5s;
+        }
+        .box1:hover{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    before div
+    <div class="border-outline">
+        border-outline
+    </div>
+    after div
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>
