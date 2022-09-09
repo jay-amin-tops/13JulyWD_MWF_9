@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class*="border"]{
+            border: 1px solid;
+        }
+        .border-disp-block{ display: block; }
+        .border-disp-inline{ display: inline; margin: 20px;padding: 30px; }
+        .border-disp-inline-block{display: inline-block; margin: 20px;padding: 30px;}
+    </style> 
+</head>
+
+<body>
+    <ul>
+        <li> display: block;</li>
+        <li> display: inline;</li>
+        <li> display: inline-block;</li>
+        <li> display: flex;</li>
+        <li> display: grid;</li>
+    </ul>
+    <p> <strong>Display Block</strong> The element generates a block element box, generating line breaks both before and after the element when in the normal flow. </p>
+    <p>Block <b>something</b></p>
+    <div>Block <b>something</b></div>
+    <div>Block <p>something</p></div>
+    <p><strong>Display Inline</strong>The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space</p>
+    <p><strong>Display Inline-block</strong>The element generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).
+        It is equivalent to inline flow-root.</p>
+
+
+        <h3>Display Block</h3>
+        before
+        <div class="border-disp-block">Display block</div>
+        after
+        <hr>
+        <h3>Display inline</h3>
+        before
+        <div class="border-disp-inline">Display Inline</div>
+        <div class="border-disp-inline">Display Inline</div>
+        after
+        <h3>Display inline block</h3>
+        before
+        <div class="border-disp-inline-block">Display Inline Block</div>
+        after
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+</body>
+
+</html>
