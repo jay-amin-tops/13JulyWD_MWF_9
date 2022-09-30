@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/main-background.png);
+}
+
+.container {
+    width: 1180px;
+    /* width: 90%; */
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.align-item-center {
+    align-items: center;
+}
+.align-item-end {
+    align-items: end;
+}
+
+.col-33 {
+    width: 33.33%;
+}
+
+.justy-spc-btw {
+    justify-content: space-between;
+}
+
+.ml-a {
+    margin-left: auto;
+}
+
+.menubar {
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    line-height: 80px;
+}
+
+.search input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #115c90;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.posi-rele {
+    position: relative;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justi {
+    text-align: justify;
+}
+
+.cust-search-icon {
+    right: 5px;
+    top: 25px;
+}
+
+.header-sketch {
+    top: 200px;
+    left: -65px;
+}
+
+.header-sketch1 {
+    bottom: 0px;
+    right: 0px;
+}
+
+.main-heading {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    top: 50px;
+}
+
+.main-heading h1 {
+    font-size: 107px;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    color: #0b5e98;
+    line-height: 96px;
+}
+
+.main-heading span {
+    font-size: 33px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    color: #0b5e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    text-align: center;
+}
+
+.span-est {
+    left: 0;
+    bottom: 45px;
+}
+
+.span-1999 {
+    right: 0;
+    bottom: 45px;
+}
+
+.header-txt p{
+    color: #0b5e98;
+    font-weight: 400;
+    font-family: "DM Sans";
+}
+.header-txt h3{
+    font-size: 26px;
+    line-height: 44px;
+    color: #0b5e98;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.header-txt .para-l{
+    margin-right: 4em;
+    margin-bottom: 7em;
+}
+.header-txt .para-r{
+    margin-left: 4em;
+    margin-bottom: 7em;
+}

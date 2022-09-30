@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+
+        }
+        .hover-scale:hover{
+            transform: scale(2);
+        }
+        img{
+            transition: all 2s;
+        }
+        .hover-matrix:hover{
+            transform:matrix(1, 2, 3, 4, 5, 6);
+        }
+        .hover-rotate:hover{
+            /* transform:rotate(45deg) */
+            /* transform:rotateX(45deg) */
+            /* transform:rotateY(45deg) */
+            /* transform:rotateZ(45deg) */
+            transform:rotate3d(1,2,3,45deg)
+        }
+        .hover-translate:hover{
+            transform: translate(120px, 50%);
+        }
+        
+        .hover-skew:hover{
+            transform:skew(30deg, 20deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        /* Function values */
+        <li>transform: matrix(1, 2, 3, 4, 5, 6);</li>
+        <li>transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);</li>
+        <li>transform: perspective(17px);</li>
+        <li>transform: rotate(0.5turn);</li>
+        <li>transform: rotate3d(1, 2, 3, 10deg);</li>
+        <li>transform: rotateX(10deg);</li>
+        <li>transform: rotateY(10deg);</li>
+        <li>transform: rotateZ(10deg);</li>
+        <li>transform: translate(12px, 50%);</li>
+        <li>transform: translate3d(12px, 50%, 3em);</li>
+        <li>transform: translateX(2em);</li>
+        <li>transform: translateY(3in);</li>
+        <li>transform: translateZ(2px);</li>
+        <li>transform: scale(2, 0.5);</li>
+        <li>transform: scale3d(2.5, 1.2, 0.3);</li>
+        <li>transform: scaleX(2);</li>
+        <li>transform: scaleY(0.5);</li>
+        <li>transform: scaleZ(0.3);</li>
+        <li>transform: skew(30deg, 20deg);</li>
+        <li>transform: skewX(30deg);</li>
+        <li>transform: skewY(1.07rad);</li>
+
+    </ul>
+    <img class="hover-scale" src="smiley.png" alt="">
+    <img class="hover-matrix" src="smiley.png" alt="">
+    <img class="hover-rotate" src="smiley.png" alt="">
+    <img class="hover-translate" src="smiley.png" alt="">
+    <img class="hover-skew" src="smiley.png" alt="">
+
+</body>
+</html>

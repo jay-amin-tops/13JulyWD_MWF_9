@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hov-img {
+            transition: all 2s;
+            /* transform: rotateY(45deg); */
+            transform: rotateY(-50deg);
+            /* transform-origin: right; */
+            transform-origin: left;
+            transition: all 5s;
+        }
+
+        .hov-img:hover {
+            /* transform: rotate(60deg); */
+            /* transform: rotate3d(1,20,30,180deg); */
+            /* transform: rotateX(180deg); */
+            transform: rotateY(20deg);
+            /* perspective: 1600px; */
+        }
+
+        .txt {
+            position: absolute;
+            top: 6%;
+            font-size: 36px;
+            color: white;
+            display: none;
+            background-color: grey;
+            height: 110px;
+            width: 140px;
+            text-align: center;
+            margin-left: 10px;
+            transition: all 5s;
+        }
+        .hovme{
+            transition: all 5s;
+        }
+        .txt:hover  {
+            transform: rotateZ(180deg);
+        }
+        .hovme:hover .txt {
+            /* transform: translate(8%); */
+            /* transform: translate(5%, 5%); */
+            /* transform: rotateZ(180deg); */
+            /* transform: scale(2); */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="hovme">
+        <div>
+            <img class="hov-img" width="20%" src="../images/1.jpg" alt="">
+
+        </div>
+        <div class="txt">
+            test
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

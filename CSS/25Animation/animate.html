@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.div1
+		{
+			width: 100px;
+			height: 100px;
+			background: lightcoral;
+			animation-name: xyz;
+			animation-duration: 2s;
+			animation-iteration-count: 3;
+		}
+
+		@keyframes xyz
+		{
+			from{background: lightcoral;}
+			to{background: blue;}
+		}
+
+		.div2
+		{
+			width: 100px;
+			height: 100px;
+			background: blue;
+			animation-name: antique;
+			animation-duration: 2s;
+			position: relative;
+
+			animation-iteration-count: 2;
+		}
+
+		@keyframes antique
+		{
+			0% {background: blue; left: 0;top: 0}
+			10% {background: red; left: 200px;top: 0}
+			20% {background: green; left: 200px;top: 200px}
+			30% {background: hotpink; left: 0px;top: 200px}
+			100% {background: gray;left: 0;top: 0}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="div1">
+		
+	</div>
+
+	<div class="div2">
+		
+	</div>
+
+</body>
+</html>

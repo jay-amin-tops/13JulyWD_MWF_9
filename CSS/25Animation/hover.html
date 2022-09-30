@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .g-box {
+            width: 21%;
+            height: 220px;
+            position: relative;
+            cursor: pointer;
+            margin: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 15px #c4aa19;
+        }
+        .g-box img {
+            width: 100%;
+            height: 100%;
+        }
+        .g-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            transition: all 1s;
+            clip-path: circle(0% at 50% 50%);
+        }
+        .g-box:hover .g-content {
+            clip-path: circle(100% at 50% 50%);
+        }
+
+        /* .g-content h1 {
+            color: white;
+            font-family: 'Tangerine', cursive;
+            font-size: 3em;
+
+        } */
+        /* .g-box:hover img {
+            filter: blur(10px);
+            transform: scale(1.1);
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="g-box">
+        <img src="../images/club.jpg" alt="g1">
+        <div class="g-content">
+            <h1>Memories</h1>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        .t-box {
+            width: 35%;
+            height: 380px;
+            background: white;
+            overflow: hidden;
+            position: relative;
+            padding: 15px 15px;
+        }
+
+        .t-box img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 5px;
+            box-shadow: 0 0 15px #c4aa19;
+        }
+
+        .t-box .t-box-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .t-box .t-box-content::before,
+        .t-box .t-box-content::after {
+            content: '';
+            width: 80%;
+            height: 43%;
+            background: #c4aa19;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transition: all 0.5s;
+            opacity: 0;
+            transform: rotate(-30deg);
+        }
+
+        .t-box .t-box-content::before {
+            top: -20%;
+        }
+
+        .t-box .t-box-content::after {
+            bottom: -20%;
+        }
+
+        .t-box:hover .t-box-content::before {
+            top: 7%;
+            opacity: 0.5;
+            transform: rotate(0deg);
+        }
+
+        .t-box:hover .t-box-content::after {
+            bottom: 7%;
+            opacity: 0.5;
+            transform: rotate(0deg);
+        }
+
+        .t-box .content {
+            width: 100%;
+            height: 45%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+            text-align: center;
+            transform: rotate(90deg);
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        .t-box .social {
+            padding: 0;
+            margin: 0 0 20px 0;
+            list-style: none;
+            margin-left: -4% !important;
+        }
+
+        .t-box .social li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .t-box .social li a {
+            color: black;
+            background: white;
+            display: block;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+
+        .t-box .title {
+            font-size: 4em;
+            font-family: 'Tangerine', cursive;
+        }
+
+        .t-box:hover .content {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+
+        .t-box .social li a .fab:hover {
+            color: #c4aa19;
+        }
+
+        .t-box .social li a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="t-box">
+        <img src="../images/heart.jpg" alt="">
+        <div class="t-box-content">
+            <div class="content">
+                <ul class="social disp">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-dribbble"></i></a></li>
+                </ul>
+                <h3 class="title">Name</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

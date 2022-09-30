@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes left-right {
+            0%{  left: 1100px; }
+            100%{ left: 100px; }
+        }
+        @keyframes right-left {
+            /* 0%{  margin-left: 0px; }
+            100%{  margin-left: 800px;} */
+            0%{  left: 0px; }
+            100%{ left: 900px;}
+        }
+        .row{ display: flex; }
+        .right-div{
+            /* position: relative;
+            right: 20px; */
+            position: relative;
+            /* margin-left: 300px; */
+            left: 900px;
+            animation: 3s  linear right-left;
+        }
+        .col{
+            height: 20px;
+            box-shadow: 3px 3px 20px grey;
+            padding: 50px;
+
+        }
+        .left-div{
+            position: relative;
+            left: 100px;
+            animation: 3s  linear left-right ;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="col left-div">Left</div>
+        <div class="col right-div">Right</div>
+    </div>
+
+</body>
+</html>

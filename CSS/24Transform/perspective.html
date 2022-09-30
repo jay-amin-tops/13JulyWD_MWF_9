@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #d21155;
+        }
+
+        .content {
+            margin-top: 10%;
+            margin-right: 20px;
+            margin-left: 20px;
+            text-align: center;
+        }
+
+        .box {
+            height: 190px;
+            width: 180px;
+            background: #ffffff;
+            border-radius: 12px;
+            display: inline-block;
+            margin: 10px 20px 10px 20px;
+            transition: 0.4s ease-in;
+
+
+        }
+
+        .b1 {
+            transform-origin: left center;
+        }
+
+        .b1:hover {
+            transform: perspective(300px) rotatey(45deg);
+            opacity: 0.8;
+        }
+
+        .b2 {
+            transform-origin: bottom center;
+        }
+
+        .b2:hover {
+            opacity: 0.8;
+            transform: perspective(300px) rotatex(45deg);
+        }
+
+
+        .b3 {
+            transform-origin: right center;
+        }
+
+        .b3:hover {
+            opacity: 0.8;
+            transform: perspective(300px) rotatey(-45deg);
+        }
+
+        .text {
+            color: #D0D0D0;
+            text-align: center;
+            ;
+            font-size: 10px;
+            font-family: sans-serif;
+        }
+
+        a {
+            text-decoration: underline;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="box b1">
+            <span class="text">left center perspective</span>
+        </div>
+        <div class="box b2">
+            <span class="text">bottom center perspective</span>
+        </div>
+        <div class="box b3">
+            <span class="text">right center perspective</span>
+        </div>
+    </div>
+</body>
+
+</html>

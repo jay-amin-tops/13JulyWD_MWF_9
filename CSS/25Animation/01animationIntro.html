@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p-animate {
+            animation: 3s linear slidein;
+            /* animation-name: slidein; */
+            /* animation-duration: 3s; */
+            /* animation-direction: alternate; */
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: linear; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-play-state: paused; */
+            /* animation-fill-mode: backwards; */
+        }
+
+        /* @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        } */
+        @keyframes slidein {
+            0%{margin-left: 100%;
+                width: 300%;}
+            20%{margin-left: 80%;
+                width: 300%;}
+            40%{margin-left: 60%;
+                width: 300%;}
+            60%{margin-left: 40%;
+                width: 200%;}
+            80%{margin-left: 20%;
+                width: 150%;}
+            100%{margin-left: 0%;
+                width: 100%;}
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        The animation shorthand CSS property applies an animation between styles. It is a shorthand for animation-name,
+        animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction,
+        animation-fill-mode, and animation-play-state.
+    </p>
+    <p class="p-animate"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt aspernatur necessitatibus
+        deserunt dignissimos veritatis consequatur architecto repellendus assumenda quae voluptate nesciunt unde itaque
+        exercitationem, asperiores soluta ducimus laudantium error! </p>
+        <p>/* @keyframes duration | easing-function | delay |
+            iteration-count | direction | fill-mode | play-state | name */</p>
+            <p>animation: 3s linear slidein, 3s ease-out 5s slideout;</p>
+</body>
+
+</html>
