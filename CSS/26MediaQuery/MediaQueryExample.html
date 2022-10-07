@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .container {
+            /* width: 80%; */
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .col-25 {
+            width: 100%;
+        }
+
+
+        @media (min-width:576px) {
+            .container {
+                width: 520px;
+                margin: 0 auto;
+            }
+            .col-25 {
+                width: 50%;
+            }
+        }
+
+        @media (min-width:768px) {
+            .container {
+                width: 720px;
+                margin: 0 auto;
+            }
+            .col-25 {
+                width: 50%;
+            }
+        }
+
+        @media (min-width:992px) {
+            .container {
+                width: 940px;
+                margin: 0 auto;
+            }
+
+            .col-25 {
+                width: 33.33%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .container {
+                width: 1140px;
+                margin: 0 auto;
+            }
+
+            .col-25 {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-25">test</div>
+            <div class="col-25">test</div>
+            <div class="col-25">test</div>
+            <div class="col-25">test</div>
+        </div>
+    </div>
+</body>
+
+</html>

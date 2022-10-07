@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @charset "utf-8"; */
+        @media print {
+            p {
+                color: orange;
+            }
+        }
+
+        @media (min-width: 1250px) {
+            /* … */
+        }
+        @media (max-width: 1250px) {
+            /* … */
+        }
+
+        @media (min-width: 30em) and (orientation: landscape) {
+            /* … */
+        }
+
+        @media (min-width: 30em) and (max-width: 50em) {
+            /* … */
+        }
+    </style>
+</head>
+
+<body>
+    <p>Media queries are useful when you want to modify your site or app depending on a device's general type (such as
+        print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport
+        width).</p>
+    <p>At-rules are CSS statements that instruct CSS how to behave. They begin with an at sign, '@' (U+0040 COMMERCIAL
+        AT), followed by an identifier and includes everything up to the next semicolon, ';' (U+003B SEMICOLON), or the
+        next CSS block, whichever comes first.</p>
+    <p>Media types define the broad category of device for which the media query applies: all, print, screen. The type
+        is optional (assumed to be all) except when using the not or only logical operators.</p>
+    <img src="sizes.jpg" alt="">
+</body>
+
+</html>
