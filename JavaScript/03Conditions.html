@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Marks = 99
+        // if (Marks > 50) {
+        //     console.log("Cleared");
+        // }
+        // if (Marks > 50) {
+        //     console.log("Cleared");
+        // }else{
+        //     console.log("Try again");
+        // }
+        // condition? "true blog" : "else/false blog"
+        // (Marks > 50) ? console.log("true blog"):console.log("else/false blog")
+
+        if (Marks >=0 && Marks <= 100) {
+            if (Marks >= 50 ) {
+                if (Marks >= 50 && Marks < 60) {
+                    console.log("pass class");
+                } else if (Marks >= 60 && Marks < 70){
+                    console.log("first class");
+                } else if (Marks >= 70 && Marks < 80){
+                    console.log("dist class");
+                } else if (Marks >= 80 && Marks < 90){
+                    console.log("dist+ class");
+                } else if (Marks >= 90 && Marks <= 100){
+                    console.log("dist++ class");
+                }
+                console.log("Cleared");
+            }else{
+                console.log("Try again");
+            }
+        }else{
+            console.log("Invalid Entry");
+        }
+        langOp = 3
+        console.log(++langOp);
+        console.log(langOp);
+        switch (langOp) {
+            case 1:
+                console.log("Gujarati");
+                break;
+            case 2:
+                console.log("Hindi");
+                break;
+            case 3:
+                console.log("English");
+                break;
+        
+            default:
+                break;
+        }
+    </script>
+</body>
+</html>
