@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onkeyup="getInpData()" type="text" name="inp_name" class="inp_class" id="inp_id">
+<script>
+    function getInpData() {
+        // Get HTML Data To JavaScript Using ID START
+        // var inpData = document.getElementById("inp_id")
+        // console.log(inpData);
+        // console.log(inpData.value);
+        // Get HTML Data To JavaScript Using ID END
+
+
+        // Get HTML Data To JavaScript Using Class START
+        // var inpData = document.getElementsByClassName("inp_class")
+        // console.log(inpData);
+        // console.log(inpData[0]);
+        // console.log(inpData[0].value);
+        // Get HTML Data To JavaScript Using Class END
+
+        // Get HTML Data To JavaScript Using Name START
+        // var inpData = document.getElementsByName("inp_name")
+        // console.log(inpData);
+        // console.log(inpData[0]);
+        // console.log(inpData[0].value);
+        // Get HTML Data To JavaScript Using Name END
+
+        // Get HTML Data To JavaScript Using TagName START
+        // var inpData = document.getElementsByTagName("input")
+        // console.log(inpData);
+        // console.log(inpData[0]);
+        // console.log(inpData[0].value);
+        // Get HTML Data To JavaScript Using TagName END
+        
+        
+        // var inpData = document.querySelector("input")
+        // var inpData = document.querySelector(".inp_class")
+        // var inpData = document.querySelector("#inp_id")
+        var inpData = document.querySelectorAll("input")
+        // var inpData = document.querySelectorAll(".inp_class")
+        // var inpData = document.querySelectorAll("#inp_id")
+        console.log(inpData);
+    }
+</script>
+</body>
+</html>

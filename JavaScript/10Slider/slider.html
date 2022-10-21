@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slider">
+        <img src="images/1.jpg" class="slider-img" alt="">
+        <img src="images/2.jpg" class="slider-img" alt="">
+        <img src="images/3.jpg" class="slider-img" alt="">
+        <img src="images/4.jpeg" class="slider-img" alt="">
+        <img src="images/5.jpg" class="slider-img" alt="">
+    </div>
+    <script>
+        let SliderImageData = document.getElementsByClassName("slider-img");
+        let count = 0
+        console.log(SliderImageData);
+        function Slider() {
+            for (let index = 0; index < SliderImageData.length; index++) {
+                console.log(SliderImageData[index]);
+                SliderImageData[index].style.display ="none"
+            }
+            console.log("count",count);
+            // SliderImageData[count].style.display ="block"
+            count++;
+            setTimeout(Slider, 3000);
+        }
+        Slider();
+    </script>
+</body>
+</html>
