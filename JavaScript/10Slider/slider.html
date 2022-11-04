@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .slideranimation{
+            animation: slideranim 3s linear;
+            position: relative;
+        }
+        @keyframes slideranim {
+            from{ right: 1000px; }
+            to{right: 0;}
+        }
+    </style>
 </head>
 <body>
     <div class="slider">
@@ -22,9 +32,17 @@
             for (let index = 0; index < SliderImageData.length; index++) {
                 console.log(SliderImageData[index]);
                 SliderImageData[index].style.display ="none"
+                SliderImageData[index].classList.remove("slideranimation")
+            }
+            if (count >= SliderImageData.length) {
+                count = 0
             }
             console.log("count",count);
-            // SliderImageData[count].style.display ="block"
+            console.log("element",SliderImageData[count]);
+            console.log("element",SliderImageData[count].classList);
+            SliderImageData[count].style.display ="block"
+            SliderImageData[count].classList.add("slideranimation")
+
             count++;
             setTimeout(Slider, 3000);
         }
