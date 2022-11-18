@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        span{
+        span {
             color: red;
         }
     </style>
 </head>
+
 <body>
     <form method="get">
         <table border="1" align="center">
             <tr>
                 <td>User Name</td>
                 <td>
-                    <input type="text" onblur="checkreq()" name="username" id="username" required> <span id="usernameError">*</span>
+                    <input type="text" onblur="checkreq(this,'usernameError')" name="username" id="username" required>
+                    <span id="usernameError">*</span>
                 </td>
             </tr>
             <tr>
                 <td>Password</td>
                 <td>
-                    <input type="password" name="password" id="password" required> <span>*</span>
+                    <input type="password" onblur="checkreq(this,'passwordError')" name="password" id="password"
+                        required>
+                    <span id="passwordError">*</span>
                 </td>
             </tr>
             <tr>
@@ -32,7 +37,8 @@
                     <!-- <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" id="email" required> <span>*</span> -->
                     <!-- <input type="email" onkeydown="checkemail(this)" name="email" id="email" required> <span>*</span> -->
                     <!-- <input type="email" onkeypress="checkemail(this)" name="email" id="email" required> <span>*</span> -->
-                    <input type="email" onkeyup="checkemail(this)" name="email" id="email" required> <span id="emailError">*</span>
+                    <input type="email" onkeyup="checkemail(this)" name="email" id="email" required> <span
+                        id="emailError">*</span>
                 </td>
             </tr>
             <tr>
@@ -40,7 +46,8 @@
                 <td>
                     <!-- <input type="tel" onkeypress="console.log(event)" name="mobile" id="mobile" required> <span>*</span> -->
                     <!-- <input type="tel" onkeypress="console.log(event.which)" name="mobile" id="mobile" required> <span>*</span> -->
-                    <input type="tel" onkeypress="return (event.which >= 48 && event.which <= 57)" name="mobile" id="mobile" required> <span>*</span>
+                    <input type="tel" onkeypress="return (event.which >= 48 && event.which <= 57)" name="mobile"
+                        id="mobile" required> <span>*</span>
                 </td>
             </tr>
             <tr>
@@ -49,8 +56,8 @@
                 </td>
             </tr>
         </table>
-        
-        
+
+
     </form>
     <script>
         function checkemail(anything) {
@@ -66,19 +73,24 @@
                 document.getElementById("emailError").innerHTML = "Invalid Format"
             }
         }
-        function checkreq() {
+        function checkreq(inp, spanid) {
             // let username = document.getElementById("username");
             // console.log(username);
             // console.log(username.value);
-            let username = document.getElementById("username").value;
-            if (username == "") {
-                console.log("This field is required");
-                // document.getElementById("usernameError").innerText = "<b>This field is required</b>";
-                document.getElementById("usernameError").innerHTML = "<b>This field is required</b>";
-            }else{
-                document.getElementById("usernameError").innerHTML = "";
+            // let username = document.getElementById("username").value;
+            console.log(inp.value);
+            if (inp.value == "") {
+                // console.log("This field is required");
+                //     // document.getElementById("usernameError").innerText = "<b>This field is required</b>";
+                //     document.getElementById("usernameError").innerHTML = "<b>This field is required</b>";
+                document.getElementById(spanid).innerHTML = "<b>This field is required</b>";
+            } else {
+                document.getElementById(spanid).innerHTML = "";
+                // console.log("valid");
+                // document.getElementById("usernameError").innerHTML = "";
             }
         }
     </script>
 </body>
+
 </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>In JavaScript, arrays aren't primitives but are instead Array objects with the following core characteristics:
+    </p>
+    <p>array declaration = New array() / []</p>
+
+    <ul>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"><code>concat()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin"><code>copyWithin()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"><code>every()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"><code>filter()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat"><code>flat()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap"><code>flatMap()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"><code>forEach()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"><code>indexOf()</code></a></li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"><code>lastIndexOf()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"><code>map()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"><code>reduce()</code></a></li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight"><code>reduceRight()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"><code>reverse()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"><code>slice()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"><code>some()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"><code>sort()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"><code>splice()</code></a></li>
+    </ul>
+
+
+    <ul>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries"><code>entries()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill"><code>fill()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"><code>find()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"><code>findIndex()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLast"><code>findLast()</code></a>
+        </li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLastIndex"><code>findLastIndex()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/group"><code>group()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/groupToMap"><code>groupToMap()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"><code>includes()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"><code>join()</code></a></li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys"><code>keys()</code></a></li>
+        <li><a
+                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString"><code>toLocaleString()</code></a>
+        </li>
+        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values"><code>values()</code></a></li>
+    </ul>
+    <script>
+        // let arr = new Array("Data");
+        let arr = ["Data", "Test"];
+        // document.write = arr; 
+        document.write(arr);
+        console.log(arr);
+        console.log(arr[0]);
+        console.log(arr[1]);
+        const fruits = ['Apple', 'Banana'];
+        for (let index = 0; index < fruits.length; index++) {
+            const element = fruits[index];
+            console.log(element);
+        }
+        arr.forEach(element => {
+            console.log(element);
+        });
+        console.log(fruits.length); // 2
+        console.log(fruits.indexOf('Banana'));
+        fruits.includes('Banana'); // true
+
+        const fruits1 = ['Apple', 'Banana'];
+        const newLength = fruits1.push('Orange');
+        console.log(newLength);
+        console.log(fruits1);
+
+        const fruits2 = ['Apple', 'Banana', 'Orange'];
+        const removedItem = fruits2.pop();
+
+
+        const fruits3 = ['Apple', 'Banana', 'Strawberry', 'Mango', 'Cherry'];
+        const start = -3;
+        const removedItems = fruits3.splice(start);
+        console.log(removedItems);
+
+        const fruits4 = ['Banana', 'Mango'];
+        const newLength = fruits4.unshift('Strawberry');
+        console.log(fruits4);
+
+
+        const fruits5 = ['Strawberry', 'Banana', 'Mango'];
+        const start = fruits5.indexOf('Banana');
+        const deleteCount = 1;
+        const removedItems = fruits5.splice(start, deleteCount);
+        console.log(fruits5);
+
+        const fruits = ['Apple', 'Mango', 'Cherry'];
+        fruits.forEach((item, index, array) => {
+            console.log(item, index);
+        });
+
+        const fruits6 = ['Apple', 'Banana', 'Strawberry'];
+        const moreFruits = ['Mango', 'Cherry'];
+        const combinedFruits = fruits6.concat(moreFruits);
+        console.log(combinedFruits);
+
+
+    </script>
+</body>
+
+</html>

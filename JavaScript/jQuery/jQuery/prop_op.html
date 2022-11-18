@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="checkbox" checked="checked">
+    <input type="checkbox">
+    <input type="checkbox" id="chkbox">
+    <input type="checkbox" checked="checked">
+    <button id="disable">Select All</button>
+    <button id="enable">enable</button>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        let chkarry = $("input[type='checkbox']");
+        $("#enable").click(function (params) {
+            chkarry.prop({ checked: false, disabled:false })
+        })
+        $("#disable").click(function (params) {
+            $("#chkbox").prop({ checked: true })
+            chkarry.prop({ checked: true, disabled: true })
+            // for (let index = 0; index < chkarry.length; index++) {
+            // const element = array[index];
+            // console.log(chkarry.hide());
+            // console.log();
+            // (chkarry[index]).attr()
+            // console.log("called",index);
+            // }
+            // $("input[type='checkbox']").prop({
+            //     disabled:true
+            // })
+        })
+    // console.log($("input[type='checkbox']").prop());
+    </script>
+</body>
+
+</html>

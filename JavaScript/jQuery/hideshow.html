@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hide" onclick="hidedata()">Hide</button>
+    <button id="show">Show</button>
+    <button id="detach">detach</button>
+    <button id="empty">empty</button>
+    <p id="data">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur sunt provident dolores dolore fugit explicabo? Veritatis consequatur dolores exercitationem distinctio! Maiores reprehenderit harum sapiente consequuntur molestiae odio nemo dolore?
+    </p>
+    <div id="disptext"></div>
+    <div id="disphtml"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        // $("#hide").click(function () {
+        //     console.log("called");
+        // })
+        function hidedata(){
+            $("#data").fadeOut();
+            // $("#data").hide();
+            console.log("called");
+        }
+        $("#show").click(function () {
+            console.log("called");
+            $("#data").fadeIn();
+            // $("#data").show();
+        })
+        $("#empty").click(function () {
+            $("#data").empty();
+        })
+        $("#detach").click(function () {
+            $("#data").detach();
+        })
+
+        $( "#disphtml" ).html( "<b>Wow!</b> Such excitement..." );
+        $( "#disptext" ).text( "<b>Wow!</b> Such excitement..." );
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border: 50px solid gray;
+            padding: 30px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="box">Test</div>
+    <button id="btn">Click</button>
+    <p>,Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia itaque odio aliquid perspiciatis, natus similique asperiores quibusdam aliquam architecto, deleniti odit accusamus reprehenderit neque eaque cupiditate ut minima et.</p>
+
+<label for="">
+    label
+</label>
+<div id="res"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        console.log($("#box").height());
+        console.log($("#box").innerHeight());
+        console.log($("#box").width());
+        console.log($("#box").innerWidth());
+        console.log($("#box").offset());
+        // $("#btn").click(function () {
+        //     $("#box").height(500);
+        //     console.log($("#box").height());
+            
+        // })
+        $("*", document.body).click(function (event) {
+            // console.log("called");
+            console.log(this);
+            console.log(this.tagName);
+            $("#res").html(this.tagName)
+        })
+    </script>
+</body>
+</html>

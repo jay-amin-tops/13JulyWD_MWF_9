@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="inp1" id="inp1">
+    <input type="text" name="inp2" id="inp2">
+    <input type="button" name="btn" value="ADD" id="btn">
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            let inpData1 = document.getElementById("inp1").value
+            let inpData2 = document.getElementById("inp2").value
+            // console.log("Full Name",inpData1+inpData2);
+            console.log("addition is ",parseFloat(inpData1)+parseInt(inpData2));
+        })
+    </script>
+</body>
+
+</html>

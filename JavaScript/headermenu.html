@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        div {
+            border: 1px solid;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans Regular'
+        }
+
+        #main-header {
+            background-color: #212121;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .col {
+            /* flex: 1 0 0; */
+        }
+
+        #main-header a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 7px 15px;
+            font-size: 14px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        .top-menu {
+            background-color: #000000;
+        }
+
+        .logo {
+            width: 20%;
+        }
+
+        .menu {
+            display: none;
+            width: 80%;
+        }
+
+        .bars {
+            display: block;
+        }
+
+        .ml-a {
+            margin-left: auto;
+        }
+
+        .search {
+            width: 650px;
+            padding: 10px;
+            border-radius: 3px;
+            background-color: #3d3d3d9d;
+            border: 0;
+        }
+
+        .t-menu {
+            margin-right: 55px;
+        }
+
+        .main-menu a {
+            /* padding: 20px !important; */
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo {
+            text-align: center;
+            line-height: 85px;
+        }
+
+        .logo img {
+            vertical-align: middle;
+            height: 50px;
+            width: 80px;
+        }
+        .fixedmenu{
+            position: fixed;
+            width: 100%;
+        }
+        @media (min-width:700px) {
+
+            .menu {
+                display: block;
+            }
+
+            .bars {
+                display: none;
+            }
+        }
+
+        /* .disp-none{
+            display: none !important;
+        } */
+        .disp-block {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="row">
+            <div class="logo">
+                <img src="group.svg" alt="">
+            </div>
+            <button class="bars">toggle</button>
+            <div class="menu" id="menu">
+                <div class="top-menu">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#">
+                                Tata CLiQ luxury
+                            </a>
+                        </div>
+                        <div class="col ml-a ">
+                            <nav class="t-menu">
+                                <ul>
+                                    <li><a href="#">CLiQ Cash</a></li>
+                                    <li><a href="#">Gift Card</a></li>
+                                    <li><a href="#">CLiQ care</a></li>
+                                    <li><a href="#">track Order</a></li>
+                                    <li><a href="#">sign in/ sign up</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">categories <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">brands <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#"><input placeholder="Search for categories" class="search" type="text"
+                                        name="" id=""></a></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <div class="row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row</h2>
+    <div class="row flex-direction-row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row-reverse</h2>
+    <div class="row flex-direction-row-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column</h2>
+    <div class="row flex-direction-column">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column-reverse</h2>
+    <div class="row flex-direction-column-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-wrap</h2>
+    <div class="row flex-wrap">
+        <div class="col-50">Col1</div>
+        <div class="col-50">Col2</div>
+        <div class="col-50">Col3</div>
+    </div>
+    <div class="row flex-flow">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> justify-content</h2>
+    <div class="row justify-content">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> align-items</h2>
+    <div class="row align-items">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flexgap</h2>
+    <div class="row flexgap">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flex Grow</h2>
+    <div class="row">
+        <div class="col-grow">Col1</div>
+        <div class="col-grow">Col2</div>
+        <div class="col-grow">Col3</div>
+    </div>
+    
+    <div class="row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row</h2>
+    <div class="row flex-direction-row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row-reverse</h2>
+    <div class="row flex-direction-row-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column</h2>
+    <div class="row flex-direction-column">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column-reverse</h2>
+    <div class="row flex-direction-column-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-wrap</h2>
+    <div class="row flex-wrap">
+        <div class="col-50">Col1</div>
+        <div class="col-50">Col2</div>
+        <div class="col-50">Col3</div>
+    </div>
+    <div class="row flex-flow">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> justify-content</h2>
+    <div class="row justify-content">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> align-items</h2>
+    <div class="row align-items">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flexgap</h2>
+    <div class="row flexgap">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flex Grow</h2>
+    <div class="row">
+        <div class="col-grow">Col1</div>
+        <div class="col-grow">Col2</div>
+        <div class="col-grow">Col3</div>
+    </div>
+    
+    <div class="row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row</h2>
+    <div class="row flex-direction-row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row-reverse</h2>
+    <div class="row flex-direction-row-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column</h2>
+    <div class="row flex-direction-column">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column-reverse</h2>
+    <div class="row flex-direction-column-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-wrap</h2>
+    <div class="row flex-wrap">
+        <div class="col-50">Col1</div>
+        <div class="col-50">Col2</div>
+        <div class="col-50">Col3</div>
+    </div>
+    <div class="row flex-flow">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> justify-content</h2>
+    <div class="row justify-content">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> align-items</h2>
+    <div class="row align-items">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flexgap</h2>
+    <div class="row flexgap">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flex Grow</h2>
+    <div class="row">
+        <div class="col-grow">Col1</div>
+        <div class="col-grow">Col2</div>
+        <div class="col-grow">Col3</div>
+    </div>
+    
+    <div class="row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row</h2>
+    <div class="row flex-direction-row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row-reverse</h2>
+    <div class="row flex-direction-row-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column</h2>
+    <div class="row flex-direction-column">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column-reverse</h2>
+    <div class="row flex-direction-column-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-wrap</h2>
+    <div class="row flex-wrap">
+        <div class="col-50">Col1</div>
+        <div class="col-50">Col2</div>
+        <div class="col-50">Col3</div>
+    </div>
+    <div class="row flex-flow">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> justify-content</h2>
+    <div class="row justify-content">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> align-items</h2>
+    <div class="row align-items">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flexgap</h2>
+    <div class="row flexgap">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flex Grow</h2>
+    <div class="row">
+        <div class="col-grow">Col1</div>
+        <div class="col-grow">Col2</div>
+        <div class="col-grow">Col3</div>
+    </div>
+    
+    <div class="row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row</h2>
+    <div class="row flex-direction-row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row-reverse</h2>
+    <div class="row flex-direction-row-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column</h2>
+    <div class="row flex-direction-column">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column-reverse</h2>
+    <div class="row flex-direction-column-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-wrap</h2>
+    <div class="row flex-wrap">
+        <div class="col-50">Col1</div>
+        <div class="col-50">Col2</div>
+        <div class="col-50">Col3</div>
+    </div>
+    <div class="row flex-flow">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> justify-content</h2>
+    <div class="row justify-content">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> align-items</h2>
+    <div class="row align-items">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flexgap</h2>
+    <div class="row flexgap">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flex Grow</h2>
+    <div class="row">
+        <div class="col-grow">Col1</div>
+        <div class="col-grow">Col2</div>
+        <div class="col-grow">Col3</div>
+    </div>
+    
+    <div class="row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row</h2>
+    <div class="row flex-direction-row">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-row-reverse</h2>
+    <div class="row flex-direction-row-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column</h2>
+    <div class="row flex-direction-column">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-direction-column-reverse</h2>
+    <div class="row flex-direction-column-reverse">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2>flex-wrap</h2>
+    <div class="row flex-wrap">
+        <div class="col-50">Col1</div>
+        <div class="col-50">Col2</div>
+        <div class="col-50">Col3</div>
+    </div>
+    <div class="row flex-flow">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> justify-content</h2>
+    <div class="row justify-content">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> align-items</h2>
+    <div class="row align-items">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flexgap</h2>
+    <div class="row flexgap">
+        <div class="col">Col1</div>
+        <div class="col">Col2</div>
+        <div class="col">Col3</div>
+    </div>
+    <h2> flex Grow</h2>
+    <div class="row">
+        <div class="col-grow">Col1</div>
+        <div class="col-grow">Col2</div>
+        <div class="col-grow">Col3</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(".bars").click(() => { $("#menu").toggleClass('disp-block') })
+        // function toggleMenu() {
+        //     // let MenuItem = $("#menu").addClass('disp-block')
+        //     console.log(MenuItem);
+        // }
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            console.log(scroll);
+            if (scroll > 300) {
+                $("#main-header").addClass("fixedmenu")
+            } else {
+                $("#main-header").removeClass("fixedmenu")
+            }
+            // Do something
+        });
+    </script>
+</body>
+
+</html>
