@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            width: 8em;
+            margin: 0 auto;
+        }
+
+        .container {
+            min-height: 10em;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        /* two types of take center a object  */
+        /* 
+        .col {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        } */
+        .col {
+            display: grid;
+            place-items: center;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="1">
+        <!-- CENTERING LINES OF TEXT -->
+        <p>Lorem, ipsum dolor.</p>
+    </section>
+
+
+    <section id="2">
+        <!-- CENTERING A BLOCK OR IMAGE -->
+        <h2>CENTERING A BLOCK OR IMAGE</h2>
+    </section>
+
+    <section id="3">
+        <!-- CENTERING VERTICALLY -->
+        <div class="container">
+            <h3>small para</h3>
+        </div>
+    </section>
+    <section id="4">
+        <div class="col">
+            <img src="../191.png" alt="">
+            <!-- <div class="p"> -->
+            <h4>center</h4>
+        </div>
+        </div>
+    </section>
+    <script>
+        let a = 5
+        // console.log(a);
+        document.write(a)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>HTML Calculator</title>
+</head>
+<body >
+<form name="calculator" >
+    <table border="5" align="center">
+        <tr>
+            <td colspan="4"><input type="textfield" name="ans" value=""></td>
+        </tr>
+
+        <tr>
+            <td><input type="reset" value="reset"   onclick="document.ans.nodeValue+='reset'"></td>
+            <td><input type="button" value="clear" onclick="document.ans.nodeValue+='clear'"></td>
+            <td><input type="button" value="%"     onclick="document.ans.nodeValue+='%'"></td>
+            <td><input type="button" value="/"     onclick="document.ans.nodeValue+='/'"></td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" value="7"onclick="document.ans.nodeValue+='7'"></td>
+            <td><input type="button" value="8"onclick="document.ans.nodeValue+='8'"></td>
+            <td><input type="button" value="9"onclick="document.ans.nodeValue+='9'"></td>
+            <td><input type="button" value="*"onclick="document.ans.nodeValue+='*'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4"onclick="document.ans.nodeValue+='4'"></td>
+            <td><input type="button" value="5"onclick="document.ans.nodeValue+='5'"></td>
+            <td><input type="button" value="6"onclick="document.ans.nodeValue+='6'"></td>
+            <td><input type="button" value="-"onclick="document.ans.nodeValue+='-'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1"onclick="document.ans.nodeValue+='1'"></td>
+            <td><input type="button" value="2"onclick="document.ans.nodeValue+='2'"></td>
+            <td><input type="button" value="3"onclick="document.ans.nodeValue+='3'"></td>
+            <td><input type="button" value="+"onclick="document.ans.nodeValue+='+'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="00"onclick="document.ans.nodeValue+='00'"></td>
+            <td><input type="button" value="0"onclick="document.ans.nodeValue+='0'"></td>
+            <td><input type="button" value="."onclick="document.ans.nodeValue+='.'"></td>
+            <td><input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

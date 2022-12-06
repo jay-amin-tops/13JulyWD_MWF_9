@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="button" type="button" value="Click">
+    <br>
+    <div id="fn" hidden>First Name :
+        <input type="text" id="firstname" />
+    </div>
+
+    <input id="button1" hidden type="button" value="Click">
+    <div id="ln" hidden>Last Name :
+        <input type="text" />
+    </div>
+
+    <input id="button2" hidden type="button" value="Click">
+    <div id="em" hidden> email:
+        <input type="text" id="email" />
+    </div>
+
+    <input id="button3" hidden type="button" value="Click">
+    <br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $("#button").click(function () {
+
+            $("#button1").show();
+            $("#em").hide();
+            $("#fn").show();
+        });
+        $("#button1").click(function () {
+            $("#button2").show();
+            $("#button1").hide();
+            $("#fn").hide();
+            $("#ln").show();
+        });
+        $("#button2").click(function () {
+            $("#ln").hide();
+            // $("#button3").show();
+            $("#em").show();
+            $("#button2").hide();
+        });
+    </script>
+</body>
+
+</html>

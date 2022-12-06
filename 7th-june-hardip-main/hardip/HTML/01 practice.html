@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <style>
+       input .btn{
+            padding: 5px 15px;
+            background-color: rgb(154, 154, 185);
+            color: rgb(216, 26, 26);
+            margin: 10px;
+            display: inline-block;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form name="calculater">
+        <table border="5">
+            <tr>
+                <td colspan="4"> <input type="textfield" name="ans" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="document.calculator.ans.value+='7'"></td>
+                <td><input type="button" value="8" onclick="document.calculator.ans.value+='8'"></td>
+                <td><input type="button" value="9" onclick="document.calculator.ans.value+='9'"></td>
+                <td><input type="button" value="*" onclick="document.calculator.ans.value+='*'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="document.calculator.ans.value+='4'"></td>
+                <td><input type="button" value="5" onclick="document.calculator.ans.value+='5'"></td>
+                <td><input type="button" value="6" onclick="document.calculator.ans.value+='6'"></td>
+                <td><input type="button" value="-" onclick="document.calculator.ans.value+='-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="document.calculator.ans.value+='1'"></td>
+                <td><input type="button" value="2" onclick="document.calculator.ans.value+='2'"></td>
+                <td><input type="button" value="3" onclick="document.calculator.ans.value+='3'"></td>
+                <td><input type="button" value="+" onclick="document.calculator.ans.value+='+'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="00" onclick="document.calculator.ans.value+='00'"></td>
+                <td><input type="button" value="0" onclick="document.calculator.ans.value+='0'"></td>
+                <td><input type="button" value="." onclick="document.calculator.ans.value+='.'"></td>
+                <td><input type="button" value="=" onclick="document.calculator.ans.value+='='"></td>
+            </tr>
+            
+        </table>
+
+    </form>
+    
+</body>
+</html>

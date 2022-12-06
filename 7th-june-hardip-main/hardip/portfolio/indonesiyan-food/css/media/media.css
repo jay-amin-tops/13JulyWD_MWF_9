@@ -1,0 +1,406 @@
+@media (min-width:576px) {
+    .container {
+        width: 550px;
+        margin: 0 auto;
+    }
+
+    .col-50 {
+        width: 100%
+    }
+
+    .col-33 {
+        width: 100%;
+    }
+
+    .col-25 {
+        width: 100%;
+    }
+
+    .sec7-head span {
+        width: 500px;
+    }
+
+    .sec9-head h2 {
+        width: 500px;
+        font-size: 70px;
+    }
+
+    .email input {
+        width: 500px;
+    }
+
+    .subscribe button {
+        width: 500px;
+    }
+
+    .title p {
+        width: 500px;
+    }
+
+    .sec5-img {
+        width: 500px;
+        height: 450px;
+        overflow: hidden;
+        margin-left: 23px;
+    }
+
+    .sec4-img h2 {
+        width: 200px;
+    }
+
+    .sec5-txt p {
+        width: 462px;
+    }
+
+    .sec4-img {
+        margin: 0 90px;
+    }
+
+    .sec-img {
+        display: none;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        padding: 3px 15px;
+    }
+
+    .sec2-img {
+        text-align: left;
+    }
+
+    .sec2-img img {
+        margin: -2px 0px -5px -5px;
+    }
+
+    .sec2-img img {
+        margin: -2px 0px -5px -85px;
+        width: 85%;
+    }
+
+    .sec8-mlist1 {
+        padding: 20px;
+        margin-left: 40px;
+        width: 300px;
+    }
+
+    .sec6-head h2 {
+        font-size: 98px;
+    }
+
+    @media (min-width:768px) {
+        .container {
+            width: 740px;
+            margin: 0 auto;
+        }
+
+        .col-50 {
+            width: 100%
+        }
+
+        .col-33 {
+            width: 50%;
+        }
+
+        .col-25 {
+            width: 100%;
+        }
+
+        .sec9-head h2 {
+            width: 500px;
+            font-size: 70px;
+        }
+
+        .sec7-head span {
+            width: 800px;
+        }
+
+        .sec4-img {
+            margin: 0 0px;
+        }
+
+        .email {
+
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .email input {
+            width: 600px;
+        }
+
+        .subscribe {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .subscribe button {
+            width: 600px;
+        }
+
+        .sec6-head h2 {
+            font-size: 98px;
+        }
+
+        .sec6-head h2 {
+            font-size: 98px;
+        }
+
+    }
+
+    @media (min-width:992px) {
+        .container {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        .col-50 {
+            width: 50%
+        }
+
+        .col-33 {
+            width: 50%;
+        }
+
+        .col-25 {
+            width: 25%;
+        }
+
+        .sec-img {
+            display: block;
+        }
+
+        .sec9-head h2 {
+            width: 500px;
+            font-size: 70px;
+        }
+
+        .sec8-mlist {
+            padding: 30px;
+        }
+
+        .sec5-img {
+            margin-left: 0px;
+        }
+
+        .sec4-txt p {
+            width: 90%;
+        }
+
+        .sec8-menu1 img {
+            width: 100%;
+        }
+
+        .dis-1 {
+            right: 0px;
+            top: 50px;
+        }
+
+        .dis4 {
+            top: 318px;
+            left: 0px;
+        }
+
+        .dis3 {
+            right: 0px;
+            top: 281px;
+        }
+
+        .dis2 {
+            left: 0px;
+            top: 205px;
+        }
+
+        .sec2-img img {
+            margin: -4px 0px -8px 0px;
+            width: 100%;
+        }
+
+        .sec2-head h2 {
+            font-size: 55px;
+        }
+
+        .sec2-head p {
+            width: 400px;
+        }
+
+        .email {
+
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .email input {
+            width: 600px;
+        }
+
+        .subscribe {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .subscribe button {
+            width: 600px;
+        }
+
+        .sec6-head h2 {
+            font-size: 98px;
+        }
+    }
+
+    @media (min-width:1200px) {
+        .container {
+            width: 1180px;
+            margin: 0 auto;
+        }
+
+        .col-50 {
+            width: 50%
+        }
+
+        .col-33 {
+            width: 33%;
+        }
+
+        .col-25 {
+            width: 25%;
+        }
+
+        .sec9-head h2 {
+            width: 700px;
+            font-size: 103px;
+        }
+
+        .sec-img {
+            display: block;
+        }
+
+        .sec4-img {
+            margin: 0px 25px;
+        }
+
+        .sec8-mlist {
+            padding: 53px;
+        }
+
+        .sec8-menu img {
+            width: 100%;
+        }
+
+        .dis4 {
+            top: 318px;
+            left: 90px;
+        }
+
+        .dis3 {
+            right: -15px;
+            top: 285px;
+        }
+
+        .dis-1 {
+            right: 70px;
+            top: 50px;
+        }
+
+        .email {
+
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .email input {
+            width: 600px;
+        }
+
+        .subscribe {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .subscribe button {
+            width: 600px;
+        }
+
+        .sec6-head h2 {
+            font-size: 98px;
+        }
+    }
+
+    @media(min-width:1400px) {
+        .container {
+            width: 1380px;
+            margin: 0 auto;
+        }
+
+        .col-50 {
+            width: 50%
+        }
+
+        .col-33 {
+            width: 33%;
+        }
+
+        .col-25 {
+            width: 25%;
+        }
+
+        .sec-img {
+            display: block;
+        }
+
+        .sec9-head h2 {
+            width: 700px;
+            font-size: 103px;
+        }
+
+        .sec8-menu img {
+            width: 100%;
+        }
+
+        /* .sec8-mlist {
+            padding: 74px;
+        } */
+
+        .sec5-img {
+            margin-left: 100px;
+        }
+
+        .dis-1 {
+            right: 140px;
+            top: 50px;
+        }
+
+        .dis3 {
+            right: 90px;
+            top: 281px;
+        }
+
+        .dis4 {
+            top: 315px;
+            left: 95px;
+        }
+
+        .email {
+
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .email input {
+            width: 600px;
+        }
+
+        .subscribe {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .subscribe button {
+            width: 600px;
+        }
+
+        .sec6-head h2 {
+            font-size: 98px;
+        }
+    }
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../display/tata.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans Regular';
+        }
+
+        div {
+            border: 1px solid;
+        }
+
+        #maine-header a {
+            text-decoration: none;
+            color: white;
+            padding: 7px 15px;
+            font-size: 19px;
+            display: inline-block;
+            
+        }
+
+        #maine-header {
+            background-color: #212121;
+            /* position: absolute; */
+            position: sticky;
+           
+            top: 0;
+
+        }
+
+        .raw {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .logo {
+            width: 15%;
+            text-align: center;
+            line-height: 70px;
+        }
+
+        .logo img {
+            width: 123px;
+            height: 91px;
+            vertical-align: middle;
+        }
+
+        .menu { 
+            width: 85%;
+            
+        }
+
+        .topmenu {
+            background-color: black;
+            
+        }
+
+        .ml-a {
+            margin-left: auto;
+        }
+
+        .tmenu ul li a {
+            margin-right: 55px;
+            display: block;
+
+            text-transform: capitalize;
+        }
+
+        .tmenu ul li a:hover {
+            text-shadow: 2px 2px 5px rgb(201, 203, 31);
+            text-decoration: underline;
+            padding-left: 8px;
+            color: #ffffff;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        input {
+            /* padding: 4px 150px; */
+            width: 500px;
+        }
+
+        .search {
+            border-radius: 3px;
+            font-weight: 600;
+            text-align: left;
+
+        }
+
+        i {
+            color: white;
+            size: 3px;
+        }
+
+        /* footer style */
+        .container {
+            margin: auto;
+            max-width: 1170px;
+        }
+
+        .footer {
+            background-color: #24262b;
+            bottom: 0;
+            width: 100%;
+
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #bbb;
+            font-weight: 300;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: o 15px;
+        }
+
+        .footer-col h2 {
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h2::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .social-links{font-size: 30px;}
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            display: block;
+            transition: all 0.3s ease-in-out;
+
+
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+
+        h2 {
+            font-size: 25px;
+            color: white;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        .img-tata img {
+            display: block;
+            width: 100%;
+            height: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="maine-header">
+        <div class="raw">
+            <div class="logo">
+                <img src="tata.png" alt="">
+            </div>
+            <div class="menu">
+                <div class="topmenu">
+                    <div class="raw">
+                        <div class="col">
+                            <a href="#">tata cliq luxary</a>
+                        </div>
+                        <div class="col ml-a">
+                            <nav class="tmenu">
+                                <ul>
+                                    <li><a href="#">cliqcase </a></li>
+                                    <li><a href="#">giftcard </a></li>
+                                    <li><a href="#">cliqcare </a></li>
+                                    <li><a href="#">trackorder </a></li>
+                                    <li><a href="#">signin/signup </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainmenu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">catagory <i class="fa-solid fa-angle-down"></i></a>
+                            </li>
+                            <li><a href="#">brands <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li> <a href="#"><input class="search" placeholder=" search catagory" type="text"></a></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <body>
+
+        <div class="img-tata"><img src="tata home.png" alt=""></div>
+        <div class="img-tata"><img src="tata home2.png" alt=""></div>
+
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="raw">
+                <div class="footer-col">
+                    <h2>company</h2>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our sevices</a></li>
+                        <li><a href="#">primery policy</a></li>
+                        <li><a href="#">affiletive program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>get help</h2>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">return</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment option</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h2>online shop</h2>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shirt</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>follow us</h2>
+                    <div class="social-links">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.align {
+    align-items: center;
+}
+
+.col-33 {
+    width: 30%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.m-lf-o {
+    margin-left: auto;
+}
+
+.main-menu ul li {
+    /* list-style: none; */
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+.main-menu ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: 0.5s ease-in-out;
+    margin-top: 4px;
+}
+
+.main-menu ul li a:hover::after {
+    width: 100%;
+}
+
+.whatshapp:hover {
+    transition: 0.5s ease-out;
+    color: #075E54;
+}
+
+.instagram:hover {
+    transition: 0.5s ease-out;
+    color: #8a3ab9;
+}
+
+.facebook:hover {
+    transition: 0.5s ease-out;
+    color: #3b5998;
+}
+
+.twitter:hover {
+    transition: 0.5s ease-out;
+    color: #00acee;
+}
+
+
+.main-menu a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+
+header {
+    background-color: #000;
+}
+
+.social-icon ul li {
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.social-icon a {
+    color: white;
+}
+
+.h1-txt {
+
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.h-txt img {
+    margin: auto;
+    display: block;
+}
+
+.h1-txt p {
+    color: green;
+}
+
+
+.h1-txt h1 {
+    font-size: 70px;
+    text-transform: capitalize;
+    color: green;
+}
+
+.typing {
+    color: green;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.backg {
+    background: url(../photos/lasptop.jpg);
+    background-color: #000;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.showcase {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase video {
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+
+.title {
+    /* width: 100%; */
+    /* height: 50%; */
+    /* background-color: #000; */
+    font-size: 100px;
+    color: white;
+    mix-blend-mode: multiply;
+}
+
+h1 {
+    padding-top: 100px;
+
+}
+
+.discrip {
+    /* width: 1400px;
+    height: 50%; */
+    /* background-color: #000; */
+    font-size: 50px;
+    color: white;
+    mix-blend-mode: multiply;
+}
+
+.about h2::first-letter {
+    color: red;
+}
+
+.about h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.edu h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+
+.col-70 {
+    width: 70%;
+}
+
+.edu {
+    padding: 25px;
+}
+
+.edu-dt {
+    padding: 25px;
+}
+
+.edu p {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.edu-dt p {
+    text-transform: capitalize;
+    font-weight: 700;
+
+}
+
+.s-rang {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.s-rang input {
+    display: block;
+    width: 400px;
+}
+
+/* .backg {
+    background-color: #000;
+} */
+
+.cont h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+}
+
+.cont h2::first-letter {
+    color: red;
+}
+
+.c-dtaile {
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.project {
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 100px 0;
+}
+
+.project img {
+    border-radius: 50%;
+    border: 1px solid;
+    width: 40%;
+}
+
+.project a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#projects {
+    background-color: black;
+    /* height: 400px; */
+}

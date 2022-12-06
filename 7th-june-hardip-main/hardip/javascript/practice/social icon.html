@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>icon-hover</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(245, 245, 220, 0.529);
+        }
+        
+        .crical a {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: aliceblue;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(0deg, #ddd, #fff);
+            transition: .5s;
+        }
+        
+        .crical a:hover {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .crical a .fa-brands {
+            color: #000;
+            text-align: center;
+            height: 75px;
+            width: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(0deg, #fff, #ddd);
+            border-radius: 50%;
+            transition: .5s;
+        }
+        
+        .crical:nth-child(1) a:hover .fa-brands {
+            color: #43d854;
+        }
+        
+        .crical:nth-child(2) a:hover .fa-brands {
+            color: #bc2a8d;
+        }
+        
+        .crical:nth-child(3) a:hover .fa-brands {
+            color: #3b5998;
+        }
+        
+        .crical:nth-child(4) a:hover .fa-brands {
+            color: #00aced;
+        }
+        
+        .row {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+
+        <div class="crical">
+            <a href="#"><i class="fa-brands fa-3x fa-whatsapp"></i></a>
+        </div>
+        <div class="crical">
+            <a href="#"><i class="fa-brands fa-3x fa-instagram"></i></a>
+        </div>
+        <div class="crical">
+            <a href="#"><i class="fa-brands fa-2x fa-facebook-f"></i></a>
+        </div>
+        <div class="crical">
+            <a href="#"><i class="fa-brands fa-2x fa-twitter"></i></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

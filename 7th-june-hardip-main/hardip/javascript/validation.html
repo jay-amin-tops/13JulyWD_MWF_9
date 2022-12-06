@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" name="myform">
+
+        <table>
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" onblur="checkreq(this,'usernameError','type username')" name="username"
+                        id="username" required>
+                    <span id="usernameError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>
+                    <input type="text" onblur="checkreq(this,'passwordError','type password')" name="password"
+                        id="password" required>
+                    <span id="passwordError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>
+                    <input type="email" onblur="checkreq(this,'emailError','type email')" onkeyup="checkemail(this)"
+                        name="email" id="email" required>
+                    <span id="emailError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td>
+                    <input type="tel" onblur="checkreq(this,'numbedEror','type number')" name="mobile" id="mobile"
+                        required>
+                    <span id="numbedEror">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td><input onclick="checkreq()" type="submit" value="submit" name="save" id="save"></td>
+            </tr>
+        </table>
+    </form>
+
+
+    <script>
+
+        function checkemail(something) {
+            // console.log(something);
+            RegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            console.log(RegEx.test(something.value));
+            if (RegEx.test(something.value)) {
+                document.getElementById("emailError").innerHTML = ""
+            } else {
+                document.getElementById("emailError").innerHTML = "invalid Format"
+
+            }
+        }
+
+        function checkreq(e, spn, msg) {
+            if (e.value != "") {
+                document.getElementById(spn).innerHTML = "";
+            } else {
+                document.getElementById(spn).innerHTML = msg;
+
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

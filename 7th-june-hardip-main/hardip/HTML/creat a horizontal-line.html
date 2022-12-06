@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            margin: 100px auto;
+            text-align: center;
+            color: black;
+            font-size: 40px;
+            max-width: 600px;
+            position: relative;
+        }
+
+        h1:before {
+            content: "";
+            display: block;
+            width: 150px;
+            height: 5px;
+            background: #CD5C5C;
+            left: 40px;
+            top: 45%;
+            position: absolute;
+        }
+
+        h1:after {
+            content: "";
+            display: block;
+            width: 150px;
+            height: 5px;
+            background: #CD5C5C;
+            right: 40px;
+            top: 45%;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>something</h1>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*universal*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(7, 6, 0);
+            color: yellow;
+        }
+        /*elements*/
+        p{color: blueviolet;}
+
+        /*id selector*/
+        #something{color: brown;}
+        
+
+        /*class selectro*/
+        .something{color: coral;}
+
+        /*desecendant selector*/
+        ul.menu li a{text-decoration: none;}
+
+        /*child selector*/
+        menu>a{background-color: rgb(181, 165, 165);}
+
+        /*adjacentsiblingselectors*/
+      h2+p{font-style: italic;}
+        
+        /*general selectors*/
+        h2~p{font-style: italic;}
+
+        /*grouping selector*/
+        a,p,label{color: teal;}
+    </style>
+    
+    
+  
+</head>
+   
+<body>
+    <h2 class="something"> write something</h2>
+    <h2 class="something"> write something</h2>
+    <h2 class="something"> write something</h2>
+    <h3 id="something"> data</h3>
+    <h3 id="something"> data</h3>
+    <h3 id="something"> data</h3>
+    
+    <p>test</p>
+    <p>test</p>
+    <label for="">test</label>
+    <div>test</div>
+    <div><a href="#">test</a></div>
+    <div><a href="#">test</a></div>
+    <div><a href="#">test</a></div>
+
+
+    <ul class=" check">
+        <li><a href="#">check</a></li>
+        <li><a href="#">check</a></li>
+        <li><a href="#">check</a></li>
+        <li><a href="#">check</a></li>
+    </ul>
+    
+    <ul>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="#">manual</a></li>
+        <li><a href="#">manual</a></li>
+        <li><a href="#">manual</a></li>
+        <li><a href="#">manual</a></li>
+    </ul>
+    <h2>Website Title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h2>Website Title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h2>Website Title</h2>
+    <label for="">test</label>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <ul><li><a href="#">test</a></li></ul>
+    <label for="">test</label>
+    <span>test</span>
+    <div>chacking</div>
+</body>
+</html>
+

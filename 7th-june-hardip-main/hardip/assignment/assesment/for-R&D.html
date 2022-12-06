@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onclick="check() " action="" method="post">
+        <input onblur="checking(this,'enter a name')" type="text" name="f-name" id="f-name">
+        <input type="text" name="l-name" id="l-name">
+        <input type="submit" name="submit" id="btn">
+    </form>
+    <script>
+        function check(params) {
+
+            var name = document.getElementById("name");
+
+            if (name = " ") {
+                alert("enter a name");
+            } else {
+                void (0);
+                // alert("enter a name");
+
+                // document.getElementById("ll") =.value = ""
+            }
+            // var name = document.getElementById("lastname");
+            // if (lastname = " ") {
+            //     alert("enter last name")
+            // } else {
+            //     void (0);
+
+            // }
+        }
+
+    </script>
+</body>
+
+</html>

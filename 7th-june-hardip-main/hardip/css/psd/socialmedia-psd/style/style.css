@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#background {
+    background: url(../photo/Background.png);
+}
+
+
+.row {
+    display: flex;
+}
+
+.align {
+    align-items: center;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-30 {
+    width: 33.33%;
+}
+
+.posi-rel {
+    position: relative;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+.search {
+    margin-left: auto;
+}
+
+.search i {
+    color: #115c90;
+    right: 240px;
+}
+
+.logo img {
+    margin: 15px;
+}
+
+.search input {
+    border: 0;
+    border-bottom: 2px solid #115c90;
+    background-color: transparent;
+    position: relative;
+
+}
+
+.social-txt h1 {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 107px;
+    letter-spacing: -4px;
+    color: #0b5e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    line-height: 96px;
+    position: relative;
+    z-index: 1;
+}
+
+.span-est {
+    left: 300px;
+    top: 125px;
+    font-size: 33px;
+    letter-spacing: -1px;
+    color: #0b5e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+
+}
+
+.span-1999 {
+    left: 832px;
+    top: 125px;
+    font-size: 33px;
+    letter-spacing: -1px;
+    color: #0b5e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+}
+
+.txt1 {
+    margin: 140px 0;
+    color: #115c90;
+    text-align: center;
+}
+
+.txt1 p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.txt1 button {
+    background-color: #115c90;
+    border-radius: 15px;
+    height: 30px;
+    width: 135px;
+}
+
+.txt1 a {
+    color: #eae8d7;
+}
+
+.txt2 {
+    margin: 140px 0;
+    color: #115c90;
+    text-align: center;
+}
+
+.txt2 button {
+    background-color: #eae8d7;
+    border-radius: 15px;
+    height: 30px;
+    width: 135px;
+    border: 1px solid #115c90;
+}
+
+.txt2 p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.txt2 a {
+    color: #115c90;
+}
+
+.home-img img {
+    object-fit: contain;
+    width: 395px;
+    height: 425px;
+    top: -20px;
+
+}
+
+#sec2-backg {
+    background: url(../photo/Background\ \(2\).png);
+}
+
+.sec2-img img {
+    width: 287px;
+    height: 322px;
+    margin-top: 330px;
+    margin-left: 55px;
+    margin-bottom: 45px;
+}
+
+
+.sec2-txt h2 {
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 95px;
+}
+
+.sec2-txt p {
+    font-size: 37px;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    font-family: "Old Standard TT";
+}
+
+.sec2-img2 img {
+    width: 287px;
+    height: 322px;
+    margin-top: 45px;
+    margin-left: 55px;
+}
+
+.sketch {
+    top: 70px;
+    left: -190px;
+}
+
+.sketch1 {
+    top: 510px;
+    right: -240px;
+}
+
+.heading h2 {
+    font-size: 107px;
+    letter-spacing: -4px;
+    color: #355e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    text-align: center;
+}
+
+.heading span {
+    top: 20px;
+    left: 430px;
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #355e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+
+}
+
+.project-img {
+    margin-top: 30px;
+}
+
+.project-img p {
+    font-size: 33px;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    color: #355e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+}
+
+.project-img2 {
+    margin-top: 120px;
+}
+
+.project-img2 p {
+    font-size: 33px;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    color: #355e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+}
+
+.seemore {
+    padding: 30px;
+    text-align: center;
+}
+
+.seemore button {
+    border-radius: 18px;
+    padding: 10px 30px;
+    background-color: #355e98;
+}
+
+.seemore a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.head3 {
+    text-align: center;
+}
+
+.head3 h2 {
+    margin: 0 auto;
+    font-size: 90px;
+    width: 700px;
+    letter-spacing: -4px;
+    text-transform: capitalize;
+    color: #e9e8d9;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+
+}
+
+.head3 p {
+    padding: 50px;
+    font-size: 26px;
+    letter-spacing: -1px;
+    color: #e9e8d9;
+    font-weight: 500;
+    font-family: "DM Sans";
+
+}
+
+.head3-txt {
+    padding: 100px;
+}
+
+.head3-txt p {
+    font-size: 16px;
+    color: #e9e8d9;
+    font-weight: 400;
+    font-family: "DM Sans";
+    text-align: center;
+}
+
+.shape2 img {
+    top: -65px;
+    right: 0px;
+}
+
+.sketch3 {
+    left: -50px;
+}
+
+.sketch4 {
+    bottom: 165px;
+    right: -330px;
+}
+
+.process h2 {
+    margin-top: 140px;
+    font-size: 107px;
+    letter-spacing: -4px;
+    text-transform: capitalize;
+    color: #115c90;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    text-align: center;
+}
+
+
+.process span {
+    font-size: 26px;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    color: #355e98;
+    font-weight: 500;
+    font-family: "DM Sans";
+}
+
+.process p {
+    font-size: 16px;
+    padding: 20px 0px;
+    color: #355e98;
+    font-weight: 400;
+    font-family: "DM Sans";
+    text-align: left;
+}
+
+.sketch-artist img {
+    margin-left: 90px;
+}
+
+.process div {
+    height: 2px;
+    background-color: #0b5e98;
+}
+
+.happy-lady {
+    background-color: #0b5e98;
+}
+
+.happy-lady img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 90px 0;
+
+
+}
+
+.lunch-txt h2 {
+    font-size: 107px;
+    letter-spacing: -4px;
+    text-transform: capitalize;
+    color: #115c90;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    text-align: center;
+}
+
+.lunch-txt p {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #355e98;
+    font-weight: 400;
+    font-family: "DM Sans";
+}
+
+.span19 {
+    left: 420px;
+    top: 175px;
+    font-size: 33px;
+    letter-spacing: -1px;
+    color: #355e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+}
+
+.span99 {
+    top: 175px;
+    left: 110px;
+    font-size: 33px;
+    letter-spacing: -1px;
+    color: #355e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+}
+
+.vertical {
+    border-left: 6px solid black;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+}

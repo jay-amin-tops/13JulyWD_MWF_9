@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .col-50 {
+            width: 50%;
+        }
+
+        .menu img {
+            width: 100%;
+        }
+
+        .contwr {
+            width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="contwr">
+
+        <div class="row responsive">
+
+            <div class="col-50">
+                <div class="menu">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repellat quidem
+                            nesciunt natus nisi minus suscipit fugit dicta, temporibus veniam soluta unde quisquam.
+                            Provident iure explicabo corrupti non quas modi!</p>
+                        <img src="../photo/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-50">
+                <div class="menu">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas ab odio et corrupti
+                        repellendus officiis repellat distinctio molestias, fugiat, blanditiis hic ratione deserunt
+                        doloribus? Fugit incidunt quisquam praesentium saepe.</p>
+                    <img src="../photo/img5.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="col-50">
+                <div class="menu">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas ab odio et corrupti
+                        repellendus officiis repellat distinctio molestias, fugiat, blanditiis hic ratione deserunt
+                        doloribus? Fugit incidunt quisquam praesentium saepe.</p>
+
+                    <img src="../photo/img5.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-50">
+                <div class="menu">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas ab odio et corrupti
+                        repellendus officiis repellat distinctio molestias, fugiat, blanditiis hic ratione deserunt
+                        doloribus? Fugit incidunt quisquam praesentium saepe.</p>
+
+                    <img src="../photo/img5.png" alt="">
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="menu">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas ab odio et corrupti
+                        repellendus officiis repellat distinctio molestias, fugiat, blanditiis hic ratione deserunt
+                        doloribus? Fugit incidunt quisquam praesentium saepe.</p>
+
+                    <img src="../photo/img5.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $('.responsive').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+</script>
+
+</html>

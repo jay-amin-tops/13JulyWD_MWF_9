@@ -1,0 +1,1630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+
+
+.background {
+    background: url(../image/Header\ Backgroundhome.png);
+
+}
+
+.raw {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.container {
+    width: 100%;
+    /* width: 1400px; */
+    margin: 0 auto;
+}
+
+.justify {
+    justify-content: space-between;
+    /* position: sticky;
+    top: 0; */
+
+}
+
+.align {
+    align-items: center;
+}
+
+.col-50 {
+    width: 100%;
+
+}
+
+.col-33 {
+    width: 33%;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #799be6;
+    transition: all.2s ease
+}
+
+.menu a:hover {
+    border-bottom: 2px solid red;
+    transition: all.2s ease
+}
+
+button a {
+    padding: 10px 30px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 25px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 19px;
+    padding: 25px;
+}
+
+.input-icon i {
+    position: absolute;
+    line-height: 30px;
+    margin-left: -25px;
+
+
+}
+
+input {
+    border-radius: 15px 15px 15px 15px;
+    width: 100px;
+    height: 30px;
+}
+
+@font-face {
+    font-family: reey;
+    src: url(./font/Reey-Regular.otf);
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+.head-txt h1 {
+    font-family: reey;
+    font-weight: 600;
+    font-size: 70px;
+    width: 455px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+
+.head-txt {
+    padding: 130px;
+}
+
+.head-txt h2 {
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 100px;
+}
+
+.head-txt button a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    text-transform: capitalize;
+
+
+}
+
+
+.head-txt button {
+    padding: 12px;
+    width: 190px;
+    cursor: pointer;
+    background-color: white;
+    color: white;
+    transition: .5s ease;
+    border-radius: 38px;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid #799be6;
+    box-shadow: 0 0 10px 0 #799be6 inset,
+        0 0 10px 4px #799be6;
+    border-radius: 10px;
+
+}
+
+
+.head-txt p {
+    color: #fff;
+    text-align: justify;
+    width: 400px;
+    margin-top: 50px;
+}
+
+.head-img {
+    position: relative;
+}
+
+.head-img img {
+    position: absolute;
+}
+
+.img1 {
+    width: 500px;
+    height: 500px;
+}
+
+.img2 {
+    top: 370px;
+    left: 75px;
+    width: 500px;
+    height: 400px;
+
+}
+
+.img3 {
+    top: 385px;
+    left: -85px;
+    width: 200px;
+    height: 200px;
+}
+
+.sec2-txt h2 {
+    font-family: reey;
+    text-align: center;
+    font-size: 60px;
+    text-transform: capitalize;
+    line-height: 200px;
+
+}
+
+.sec2-dcr {
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+.sec2-img {
+    margin-top: 100px;
+    padding: 40px;
+    text-align: center;
+}
+
+.sec2-btn {
+    text-align: center;
+    padding: 100px;
+}
+
+.sec-btn {
+    text-align: center;
+}
+
+.sec-btn button {
+    padding: 12px;
+    width: 190px;
+    cursor: pointer;
+    background-color: white;
+    color: white;
+    transition: .5s ease;
+    border-radius: 38px;
+    margin-bottom: 40px;
+
+}
+
+.sec-btn a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.sec2-btn button {
+    width: 190px;
+    height: 60px;
+    border-radius: 38px;
+    background-color: black;
+
+}
+
+.sec2-btn a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.backg-2 {
+    background-color: #151618;
+}
+
+.f-color h2 {
+    color: #fff;
+    line-height: 200px;
+
+}
+
+.sec3-txt {
+    padding: 50px;
+    margin-left: 70px;
+    color: #fff;
+    width: 530px;
+    text-align: justify;
+}
+
+.sec4-img img {
+    width: 600px;
+    margin: 40px;
+}
+
+.sec4-txt h2 {
+    font-size: 58px;
+    color: #27292c;
+    font-weight: 700;
+    font-family: "Open Sans";
+    width: 492px;
+    margin: 80px;
+}
+
+.sec4-txt p {
+    width: 492px;
+    height: 175px;
+    font-size: 29px;
+    color: #27292c;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: justify;
+    margin: 0 80px;
+}
+
+.btn button {
+    width: 275px;
+    height: 60px;
+    border-radius: 38px;
+    background-color: black;
+    text-align: center;
+
+}
+
+.btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.sec5-backg {
+    background: url(../image/Header\ Backgroundhome.png);
+    height: 1100px;
+
+}
+
+.sec5-head h2 {
+    font-size: 58px;
+    color: #f8f6f1;
+    font-family: "Reey";
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 200px;
+}
+
+.sec5-dcr {
+    color: #f8f6f1;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.sec5-img {
+    position: relative;
+}
+
+.sec5-rect {
+    position: relative;
+}
+
+
+
+.sec5-img img {
+    position: absolute;
+    top: -415px;
+    left: 65px;
+    /* width: 100%; */
+}
+
+.sec5-pizza {
+    position: relative;
+}
+
+.sec5-pizza img {
+    top: 50px;
+    /* left: 445px; */
+    position: absolute;
+    width: 100%;
+
+}
+
+.sec5-pizzapis {
+    position: relative;
+}
+
+.sec5-pizzapis img {
+    position: absolute;
+    top: 470px;
+    left: 345px;
+
+}
+
+.sec6-head h2 {
+    font-size: 42px;
+    color: #393939;
+    font-family: "Reey";
+    padding: 50px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.sec6-head p {
+    /* width: 335px; */
+    padding: 0px 40px;
+    text-align: justify;
+    font-size: 19px;
+    line-height: 25px;
+    color: #333d42;
+    font-weight: 400;
+    font-family: "Open Sans";
+
+}
+
+.sec6-dcr {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 19px;
+    width: 600px;
+    margin-left: 395px;
+}
+
+.lorem-txt {
+    margin-top: 40px;
+    font-size: small;
+    font-weight: 700;
+    padding-bottom: 100px;
+}
+
+.sec7-backg {
+    background-color: #27292c;
+    height: 500px;
+}
+
+.sec7-head h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sec7-head p {
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+
+}
+
+.serch input {
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.serch {
+    position: relative;
+    text-align: center;
+}
+
+.serch button {
+    width: 200px;
+    height: 42px;
+    border-radius: 20px;
+    background-color: black;
+    position: absolute;
+    left: 808px;
+    top: 100px;
+    transition: .5s ease;
+    cursor: pointer;
+
+}
+
+.serch button:hover {
+    background: transparent;
+
+}
+
+.serch button a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 15px;
+}
+
+.sec7-img {
+    position: relative;
+}
+
+.sec7-img img {
+    position: absolute;
+    width: 1200px;
+    height: 700px;
+    left: 95px;
+    top: -60px;
+}
+
+.titlehere {
+    width: 600px;
+    /* padding: 100px; */
+    margin: auto;
+    margin-top: 40px;
+}
+
+.titlehere p {
+    width: 395px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.social-links li {
+    margin-top: 40px;
+    list-style: none;
+    display: inline-block;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #343434;
+    font-size: 25px;
+}
+
+.about {
+    display: flex;
+    text-transform: capitalize;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+.about1 ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+
+.about ul li a {
+    text-decoration: none;
+    color: #343434;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.about ul li a:hover {
+    padding-left: 8px;
+
+}
+
+.other ul li {
+    list-style: none;
+}
+
+.other ul li a {
+    text-decoration: none;
+    color: #343434;
+    font-size: 20px;
+}
+
+.Services ul li {
+    list-style: none;
+}
+
+.Services ul li a {
+    text-decoration: none;
+    color: #343434;
+    font-size: 20px;
+}
+
+h2 {
+    color: #343434;
+    text-transform: capitalize;
+}
+
+@media(min-width:320px) {
+    .container {
+        width: 310px;
+
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 100%;
+    }
+
+    .col-25 {
+        width: 100%;
+    }
+
+    .menu ul li a {
+        padding: 0px;
+    }
+
+    .logo img {
+        top: 145px;
+        left: 15px;
+        width: 100px;
+    }
+
+    .head-txt {
+        padding: 0px;
+    }
+
+    .head-txt h1 {
+        font-family: reey;
+        font-weight: 600;
+        font-size: 39px;
+        width: 155px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+
+    .head-txt p {
+        color: #fff;
+        text-align: justify;
+        width: 151px;
+        margin-top: 50px;
+    }
+
+    .img1 {
+        width: 100px;
+        height: 500px;
+    }
+
+    .img2 {
+        top: 370px;
+        left: 75px;
+        width: 100px;
+        height: 400px;
+    }
+
+    .sec2-img img {
+        width: 80%;
+    }
+
+    .sec2-btn button {
+        width: 190px;
+        height: 60px;
+    }
+
+    .sec3-txt {
+        padding: 50px;
+        margin-left: 0px;
+        color: #fff;
+        width: 314px;
+        text-align: justify;
+    }
+
+    .sec4-img img {
+        width: 100px;
+        margin: 40px;
+    }
+
+    .sec4-txt h2 {
+        font-size: 58px;
+        color: #27292c;
+        font-weight: 700;
+        font-family: "Open Sans";
+        width: 100px;
+        margin: 80px;
+    }
+
+    .sec4-txt p {
+        width: 198px;
+        height: 175px;
+        font-size: 29px;
+        color: #27292c;
+        font-weight: 400;
+        font-family: "Open Sans";
+        text-align: justify;
+        margin: 0 80px;
+    }
+
+    .sec5-img img {
+        display: none;
+    }
+
+    .sec5-head h2 {
+        font-size: 37px;
+    }
+
+    .sec5-pizza img {
+        top: 50px;
+        left: 445px;
+        position: absolute;
+        /* display: none; */
+    }
+
+    .sec5-pizzapis img {
+        position: absolute;
+        top: 470px;
+        left: 345px;
+        /* display: none; */
+    }
+
+    .sec6-dcr {
+        margin-top: 200px;
+        text-align: center;
+        font-size: 19px;
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    .sec7-img img {
+        position: absolute;
+        width: 1200px;
+        height: 700px;
+        left: 95px;
+        top: -60px;
+        display: none;
+    }
+
+    .serch input {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .serch button {
+        width: 200px;
+        height: 42px;
+        border-radius: 20px;
+        background-color: #343434;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+    .titlehere p {
+        width: 323px;
+        text-align: justify;
+        font-size: 20px;
+    }
+}
+
+
+@media(min-width:425px) {
+    .container {
+        width: 420px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 100%;
+    }
+
+    .col-25 {
+        width: 100%;
+    }
+
+    .background {
+        background: url(../image/Header\ Backgroundhome.png);
+        height: 1220px;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+
+    .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 19px;
+        padding: 5px;
+    }
+
+    .logo img {
+        position: absolute;
+        top: 80px;
+        left: 310px;
+        width: 100px;
+    }
+
+    .head-txt p {
+        color: #fff;
+        text-align: justify;
+        width: 415px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .head-txt {
+        padding: 0px;
+    }
+
+    .head-txt h1 {
+        font-family: reey;
+        font-weight: 600;
+        font-size: 70px;
+        width: 425px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+
+
+    .img1 {
+        width: 400px;
+        height: 400px;
+        top: 60px;
+    }
+
+    .img2 {
+        top: 350px;
+        left: 115px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .img3 {
+        top: 385px;
+        left: -35px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .sec2-txt h2 {
+        font-family: reey;
+        text-align: center;
+        font-size: 35px;
+        text-transform: capitalize;
+        line-height: 200px;
+    }
+
+    .sec2-btn {
+        text-align: center;
+        padding: 65px;
+    }
+
+    .sec4-img img {
+        width: 80%;
+        margin: 40px;
+    }
+
+    .sec2-img img {
+        width: 80%;
+    }
+
+    .sec3-txt {
+        padding: 50px;
+        margin-left: 35px;
+        color: #fff;
+        width: 343px;
+        text-align: justify;
+    }
+
+    .sec4-txt h2 {
+        font-size: 58px;
+        color: #27292c;
+        font-weight: 700;
+        font-family: "Open Sans";
+        width: 375px;
+        margin: 20px;
+    }
+
+    .sec4-txt p {
+        width: 375px;
+
+        font-size: 25px;
+        color: #27292c;
+        font-weight: 400;
+        font-family: "Open Sans";
+        text-align: justify;
+        margin: 0 20px;
+    }
+
+    .sec5-head h2 {
+        font-size: 25px;
+        color: #f8f6f1;
+        font-family: "Reey";
+        text-transform: capitalize;
+        text-align: center;
+        width: 359px;
+        padding: 20px;
+        line-height: 45px;
+        margin-left: 30px;
+    }
+
+    .sec5-pizza img {
+        top: 25px;
+        left: 20px;
+        position: absolute;
+        width: 90%;
+    }
+
+    .sec5-pizzapis img {
+        position: absolute;
+        top: 210px;
+        left: -5px;
+        width: 45%;
+    }
+
+    .sec5-backg {
+        background: url(../image/Header\ Backgroundhome.png);
+        height: 640px;
+    }
+
+    .sec5-img img {
+        position: absolute;
+        top: -340px;
+        left: 0px;
+        width: 105%;
+        display: none;
+    }
+
+    .sec6-head h2 {
+        font-size: 42px;
+        color: #393939;
+        font-family: "Reey";
+        padding: 20px;
+        line-height: 200px;
+        text-align: center;
+    }
+
+    .sec6-head p {
+
+        padding: 0px 40px;
+        text-align: justify;
+        font-size: 24px;
+        line-height: 25px;
+        color: #333d42;
+        font-weight: 400;
+        font-family: "Open Sans";
+    }
+
+    .serch button {
+        width: 150px;
+        height: 42px;
+        border-radius: 20px;
+        background-color: black;
+        position: absolute;
+        left: 268px;
+        top: 100px;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+    .serch input {
+        width: 419px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+
+
+    .sec6-dcr {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 19px;
+        width: 420px;
+        margin-left: 0px;
+    }
+
+    .sec7-head h2 {
+        text-transform: capitalize;
+        font-weight: 700;
+        color: #fff;
+        font-size: 40px;
+        padding: 50px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .sec7-img img {
+        display: none;
+    }
+
+}
+
+
+@media (min-width:576px) {
+    .container {
+        width: 540px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 100%;
+    }
+
+    .col-25 {
+        width: 100%;
+    }
+
+    .background {
+        background: url(../image/Header\ Backgroundhome.png);
+        height: 1305px;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+
+    .head-txt {
+        padding: 60px;
+    }
+
+    .logo img {
+        position: absolute;
+        top: 85px;
+        left: 390px;
+    }
+
+    .img1 {
+        width: 400px;
+        height: 400px;
+        left: 50px;
+    }
+
+    .img3 {
+        top: 325px;
+        left: -25px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .img2 {
+        top: 300px;
+        left: 100px;
+        width: 400px;
+        height: 300px;
+    }
+
+    .f-color h2 {
+        color: #fff;
+        line-height: 200px;
+        font-size: 50px;
+    }
+
+    .sec3-txt {
+        padding: 50px;
+        margin-left: 0%;
+        font-size: 30px;
+        color: #fff;
+        width: 530px;
+        text-align: justify;
+    }
+
+    .sec4-img img {
+        width: 90%;
+        margin: 30px;
+    }
+
+    .sec4-txt h2 {
+        font-size: 58px;
+        color: #27292c;
+        font-weight: 700;
+        font-family: "Open Sans";
+        width: 492px;
+        margin: 80px auto;
+    }
+
+    .sec4-txt p {
+        width: 492px;
+        height: 310px;
+        font-size: 40px;
+        color: #27292c;
+        font-weight: 400;
+        font-family: "Open Sans";
+        text-align: justify;
+        margin: 80px auto;
+    }
+
+    .sec5-backg {
+        background: url(../image/Header\ Backgroundhome.png);
+        height: 850px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .sec5-head h2 {
+        font-size: 30px;
+        color: #f8f6f1;
+        font-family: "Reey";
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .sec5-dcr {
+        color: #f8f6f1;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 80px;
+    }
+
+    .sec5-img img {
+        position: absolute;
+        top: -435px;
+        left: 0px;
+        display: block;
+        width: 100%;
+        display: none;
+
+    }
+
+    .sec5-pizza img {
+        top: 70px;
+        left: 20px;
+        position: absolute;
+        width: 100%;
+
+    }
+
+    .sec5-pizzapis img {
+        position: absolute;
+        top: 345px;
+        left: -30px;
+        width: 50%;
+    }
+
+    .sec6-head h2 {
+        font-size: 42px;
+        color: #393939;
+        font-family: "Reey";
+        padding: 0px;
+        line-height: 200px;
+        text-align: center;
+    }
+
+    .sec6-head p {
+        padding: 0px 40px;
+        text-align: justify;
+        font-size: 30px;
+        line-height: 30px;
+        color: #333d42;
+        font-weight: 400;
+        font-family: "Open Sans";
+    }
+
+    .sec6-dcr {
+        margin-top: 150px;
+        text-align: center;
+        font-size: 30px;
+        width: 539px;
+        margin-left: 0;
+    }
+
+    .lorem-txt {
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 100px;
+    }
+
+    .sec7-backg {
+        background-color: #27292c;
+        height: 380px;
+    }
+
+    .sec7-img img {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        left: -35px;
+        top: -25px;
+    }
+
+    .sec7-head h2 {
+        text-transform: capitalize;
+        font-weight: 700;
+        color: #fff;
+        font-size: 40px;
+        padding: 50px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .sec7-head p {
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .serch input {
+        width: 400px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 45px;
+    }
+
+    .serch button {
+        width: 135px;
+        height: 42px;
+        border-radius: 20px;
+        background-color: black;
+        position: absolute;
+        left: 335px;
+        top: 46px;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+
+
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+    .background {
+        background: url(../image/Header\ Backgroundhome.png);
+        height: 1265px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-25 {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 50%;
+    }
+
+    .sec4-img img {
+        width: 80%;
+        margin: 30px;
+    }
+
+    .logo img {
+        position: absolute;
+        top: 85px;
+        left: 575px;
+    }
+
+    .img2 {
+        top: 350px;
+        left: 120px;
+        width: 400px;
+        height: 300px;
+    }
+
+    .sec3-txt {
+        padding: 50px;
+        margin-left: 15%;
+        font-size: 30px;
+        color: #fff;
+        width: 530px;
+        text-align: justify;
+    }
+
+    .sec5-dcr {
+        color: #f8f6f1;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 80px;
+        width: 600px;
+        margin-left: 90px;
+    }
+
+    .sec5-head h2 {
+        font-size: 30px;
+        color: #f8f6f1;
+        font-family: "Reey";
+        text-transform: capitalize;
+        text-align: center;
+        width: 400px;
+        margin-left: 165px;
+    }
+
+    .sec5-backg {
+        background: url(../image/Header\ Backgroundhome.png);
+        height: 925px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .sec5-img img {
+        position: absolute;
+        top: -340px;
+        left: 0px;
+        width: 100%;
+        display: block;
+    }
+
+    .sec5-pizza img {
+        top: 70px;
+        left: 60px;
+        position: absolute;
+        width: 85%;
+    }
+
+    .sec5-pizzapis img {
+        position: absolute;
+        top: 400px;
+        left: -25px;
+        width: 45%;
+    }
+
+    .sec6-dcr {
+        margin-top: 150px;
+        text-align: center;
+        font-size: 30px;
+        width: 539px;
+        margin-left: 110px;
+    }
+
+    .serch button {
+        width: 135px;
+        height: 42px;
+        border-radius: 20px;
+        background-color: black;
+        position: absolute;
+        left: 440px;
+        top: 46px;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+    .sec7-img img {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        left: 0px;
+        top: -25px;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 980px;
+    }
+
+    .col-25 {
+        width: 25%;
+    }
+
+    .col-33 {
+        width: 33%;
+    }
+
+    .col-50 {
+        width: 50%;
+    }
+
+    .background {
+        background: url(../image/Header\ Backgroundhome.png);
+        height: 650px;
+    }
+
+    .logo img {
+        position: absolute;
+        top: -30px;
+        left: 45px;
+    }
+
+    .sec2-img img {
+        width: 100%;
+    }
+
+    .sec3-txt {
+        padding: 40px;
+        margin-left: 0%;
+        font-size: 20px;
+        color: #fff;
+        width: 460px;
+        text-align: justify;
+    }
+
+    .sec4-txt p {
+        width: 492px;
+        height: 310px;
+        font-size: 30px;
+        color: #27292c;
+        font-weight: 400;
+        font-family: "Open Sans";
+        text-align: justify;
+        margin: 80px auto;
+    }
+
+    .sec4-img img {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .btn button {
+        width: 275px;
+        height: 60px;
+        border-radius: 38px;
+        background-color: black;
+        text-align: center;
+        margin: 30px;
+    }
+
+    .sec5-backg {
+        background: url(../image/Header\ Backgroundhome.png);
+        height: 895px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .sec5-dcr {
+        color: #f8f6f1;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 17px;
+        margin-top: 80px;
+        margin-left: 200px;
+    }
+
+    .sec5-pizza img {
+        top: 15px;
+        left: 155px;
+        position: absolute;
+        width: 70%;
+    }
+
+    .sec5-pizzapis img {
+        position: absolute;
+        top: 370px;
+        left: 35px;
+        width: 40%;
+    }
+
+    .sec5-head h2 {
+        font-size: 40px;
+        color: #f8f6f1;
+        font-family: "Reey";
+        text-transform: capitalize;
+        text-align: center;
+        width: 625px;
+        margin-left: 165px;
+        line-height: 60px;
+    }
+
+    .sec7-img img {
+        position: absolute;
+        width: 90%;
+        height: 402px;
+        left: 45px;
+        top: -25px;
+    }
+
+    .serch input {
+        width: 500px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 45px;
+    }
+
+    .serch button {
+        width: 135px;
+        height: 42px;
+        border-radius: 20px;
+        background-color: black;
+        position: absolute;
+        left: 603px;
+        top: 46px;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+    .sec6-head p {
+        padding: 0px 40px;
+        text-align: justify;
+        font-size: 25px;
+        line-height: 30px;
+        color: #333d42;
+        font-weight: 400;
+        font-family: "Open Sans";
+    }
+
+    .sec6-dcr {
+        margin-top: 150px;
+        text-align: center;
+        font-size: 30px;
+        width: 539px;
+        margin-left: 220px;
+    }
+
+
+}
+
+@media (min-width:1400px) {
+    .container {
+        width: 1380px;
+    }
+
+    .col-25 {
+        width: 25%;
+    }
+
+    .col-33 {
+        width: 33%;
+    }
+
+    .col-50 {
+        width: 50%;
+    }
+
+    .background {
+        background: url(../image/Header\ Backgroundhome.png);
+        height: 710px;
+    }
+
+    .img1 {
+        width: 450px;
+        height: 450px;
+        left: 50px;
+    }
+
+    .img2 {
+        top: 400px;
+        left: 145px;
+        width: 400px;
+        height: 300px;
+    }
+
+    .img3 {
+        top: 400px;
+        left: -60px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .sec5-head h2 {
+        font-size: 45px;
+        color: #f8f6f1;
+        font-family: "Reey";
+        text-transform: capitalize;
+        text-align: center;
+        margin-left: 320px;
+        width: 705px;
+        margin-top: 70px;
+    }
+
+    .sec3-txt {
+        padding: 40px;
+        margin-left: 15%;
+        font-size: 20px;
+        color: #fff;
+        width: 460px;
+        text-align: justify;
+    }
+
+    .sec4-img img {
+        width: 90%;
+        margin: 25px;
+    }
+
+    .btn button {
+        width: 275px;
+        height: 60px;
+        border-radius: 38px;
+        background-color: black;
+        text-align: center;
+        margin: 30px;
+    }
+
+    .sec5-dcr {
+        color: #f8f6f1;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 80px;
+        margin-left: 380px;
+    }
+
+    .sec5-head h2 {
+        font-size: 45px;
+        color: #f8f6f1;
+        font-family: "Reey";
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .sec5-pizza img {
+        top: 0px;
+        left: 390px;
+        position: absolute;
+        width: 50%;
+    }
+
+    .sec5-pizzapis img {
+        position: absolute;
+        top: 360px;
+        left: 245px;
+        width: 30%;
+    }
+
+    .sec6-dcr {
+        margin-top: 150px;
+        text-align: center;
+        font-size: 30px;
+        width: 645px;
+        margin-left: 375px;
+    }
+
+    .serch input {
+        width: 600px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 45px;
+    }
+
+    .serch button {
+        width: 135px;
+        height: 42px;
+        border-radius: 20px;
+        background-color: black;
+        position: absolute;
+        left: 855px;
+        top: 46px;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+    .sec7-img img {
+        position: absolute;
+        width: 90%;
+        height: 425px;
+        left: 65px;
+        top: -25px;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: block;
+            margin: 10px;
+        }
+
+        button {
+            margin: 10px;
+        }
+
+        select {
+
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="first_number" placeholder="NUMBER">
+    <input type="text" id="second_number" placeholder="NUMBER">
+
+    <select name="" id="op">
+        <option value="+" id="add">+</option>
+        <option value="-" id="minus">-</option>
+        <option value="*" id="multiply">*</option>
+        <option value="/" id="dvid">/</option>
+        <!-- <option value="percnt" id="percnt">%</option> -->
+    </select>
+    <br>
+    <button onclick="btn_add()">click</button>
+    <input type="text" id="ans">
+    <script>
+        function btn_add() {
+
+            const first_number = parseFloat(document.getElementById("first_number").value);
+            const second_number = parseFloat(document.getElementById("second_number").value);
+            const symbol = document.getElementById("op").value;
+
+            switch (symbol) {
+                case '+':
+                    document.getElementById("ans").value = first_number + second_number;
+                    break;
+                case '-':
+                    document.getElementById("ans").value = first_number - second_number;
+                    break;
+                case '*':
+                    document.getElementById("ans").value = first_number * second_number;
+                    break;
+                case '/':
+                    document.getElementById("ans").value = first_number / second_number;
+                    break;
+
+                // default:
+                //     break;
+            }
+        }
+    </script>
+</body>
+
+
+</html>

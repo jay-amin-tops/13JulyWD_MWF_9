@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <div class="slick-slider">
+        <div class="element element-1">1</div>
+        <div class="element element-2">2</div>
+        <div class="element element-3">3</div>
+        <div class="element element-4">4</div>
+        <div class="element element-5">4</div>
+        <div class="element element-6">6</div>
+        <div class="element element-7">7</div>
+        <div class="element element-8">8</div>
+        <div class="element element-9">9</div>
+        <div class="element element-10">10</div>
+    </div>
+
+    <script>
+        $(".slick-slider").slick({
+            slidesToShow: 3,
+            infinite: false,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
+            // dots: false, Boolean
+            // arrows: false, Boolean
+        });
+    </script>
+</body>
+
+</html>

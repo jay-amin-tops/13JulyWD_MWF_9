@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .hanging {
+            width: 400px;
+            /* box-shadow: 18px 18px 18px 18px rgb(136, 133, 133); */
+
+            /* display: flex; */
+            animation: hanging ease-in-out 1s infinite alternate;
+            transform-origin: center -20px;
+            float: left;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+
+
+        .hanging img {
+            /* display: flex; */
+            width: 100%;
+            border: 5px solid #e6e3e3;
+            display: block;
+        }
+
+        .hanging::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 2px solid crimson;
+            top: -10px;
+            left: 50%;
+            z-index: 0;
+            border-bottom: none;
+            transform: rotate(45deg);
+        }
+
+        .hanging::before {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            top: -10px;
+            left: 52%;
+            z-index: 5;
+            border-radius: 50% 50%;
+            background: whitesmoke;
+        }
+
+        @keyframes hanging {
+            0% {
+                transform: rotate(3deg)
+            }
+
+            100% {
+                transform: rotate(-3deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hanging">
+        <img src="../tasks/assets/james-eades-EyWp41EftT0-unsplash.jpg" alt="">
+    </div>
+    <div class="hanging">
+        <img src="../tasks/assets/patrick-baum-evDuzZd8Kc0-unsplash.jpg" alt="">
+    </div>
+    <div class="hanging">
+        <img src="../tasks/assets/ingo-stiller-3tkxfe2GocY-unsplash.jpg" alt="">
+    </div>
+    <!-- <div class="hanging">
+        <img src="../tasks/assets/richard-lee-MLfe9XFhFwk-unsplash.jpg" alt="">
+    </div> -->
+</body>
+
+</html>

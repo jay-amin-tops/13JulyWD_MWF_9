@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slideranimation {
+            animation: slider 3s alternate;
+            position: relative;
+        }
+
+        @keyframes slider {
+
+            to {
+                right: 0;
+            }
+
+            from {
+                right: 900px;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider ">
+        <img class="slider-img " src="practice/images/1.jpg" alt="">
+        <img class="slider-img" src="practice/images/2.jpg" alt="">
+        <img class="slider-img" src="practice/images/3.jpg" alt="">
+        <img class="slider-img" src="practice/images/4.jpeg" alt="">
+    </div>
+
+    <script>
+        let slider_data = document.getElementsByClassName("slider-img")
+        let count = 0
+        console.log(slider_data);
+        function slider() {
+            for (let index = 0; index < slider_data.length; index++) {
+                console.log(slider_data[index]);
+                slider_data[index].style.display = "none"
+                // console.log("element", slider_data[index].classList.remove("slideranimation"));
+            }
+            if (count >= slider_data.length) {
+                count = 0
+            }
+            console.log("call", count);
+            console.log("element", slider_data[count]);
+            slider_data[count].style.display = "block"
+            console.log("element", slider_data[count].classList.add("slideranimation"));
+            console.log("call", count);
+            count++
+            setTimeout(slider, 3000)
+
+        }
+        slider();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid;   */
+}
+
+.container {
+    /* width: 1300px; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.align {
+    align-items: center;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+
+
+.posi-rel {
+    position: relative;
+}
+
+.col-5 {
+    width: 50%;
+}
+
+.col-50 {
+    width: 100%;
+}
+
+.col-33 {
+    width: 100%;
+}
+
+.col-25 {
+    width: 100%;
+}
+
+.nav-backg {
+    background-color: #537543;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 25px;
+
+}
+
+.g-back {
+    background-image: linear-gradient(262deg, #7cb258 0%, #537543 100%);
+    /* height: 700px; */
+
+}
+
+@font-face {
+    font-family: Berkshire Swash;
+    src: url(../font/BerkshireSwash-Regular.ttf);
+}
+
+/* .g-back img {
+    width: 50%;
+    
+}
+
+.sec-back-dsi {
+    width: 100%;
+    
+} */
+.sec-head {
+
+    margin: 0 40px;
+    color: white;
+    margin: 100px 0;
+    padding: 25px 0;
+
+}
+
+.sec-head h2 {
+    font-size: 62px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+
+    filter: drop-shadow(10px 17.321px 10.5px rgba(0, 0, 0, 0.05));
+}
+
+.sec-head span {
+    font-size: 25px;
+    margin-left: 45px;
+    letter-spacing: -1px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+    filter: drop-shadow(10px 17.321px 10.5px rgba(0, 0, 0, 0.05));
+}
+
+.sec-head p {
+    font-size: 25px;
+    line-height: 41px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    width: 400px;
+
+    padding: 70px 0;
+}
+
+.btn button {
+    padding: 10px 30px;
+    border-radius: 18px;
+    background-color: #e6ca48;
+    border: none;
+
+}
+
+.btn a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #3e5831;
+}
+
+.btn-read {
+    margin: 30px 0;
+}
+
+.btn-read button {
+    padding: 10px 30px;
+    border-radius: 18px;
+    background-color: white;
+    border: none;
+
+}
+
+.btn-read a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #3e5831;
+}
+
+
+.div {
+    padding: 50px;
+}
+
+.dis-1 {
+    right: 140px;
+    top: 50px;
+}
+
+.dis2 {
+    left: 45px;
+    top: 205px;
+}
+
+.dis3 {
+    right: 45px;
+    top: 281px;
+}
+
+.dis4 {
+    top: 315px;
+    left: 95px;
+}
+
+.g-back-liner {
+    padding: 40px 0;
+
+    background-image: linear-gradient(262deg, #7cb258 0%, #537543 100%);
+}
+
+.sec2-img {
+    text-align: end;
+}
+
+.sec2-img img {
+    width: 80%;
+    margin: -1px 0 -5px 0;
+}
+
+.sec2-head {
+    margin: 40px;
+}
+
+.sec2-head h2 {
+    font-size: 60px;
+    line-height: 69px;
+    color: #537543;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+    text-transform: capitalize;
+}
+
+.sec2-head span {
+    font-size: 20px;
+    line-height: 69px;
+    color: #537543;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-transform: capitalize;
+}
+
+.sec2-head p {
+    font-size: 20px;
+    width: 500px;
+    color: #537543;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-transform: capitalize;
+}
+
+
+
+.linear {
+    background: linear-gradient(90deg, transparent 30%, #e6ca48 30%);
+
+}
+
+.dg-back {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    background-color: #537543;
+}
+
+.sec3-head {
+    text-align: center;
+    margin: 40px;
+}
+
+.sec3-head h2 {
+    font-size: 33px;
+    letter-spacing: 3px;
+    line-height: 57px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-transform: capitalize;
+}
+
+.sec3-head p {
+    font-size: 21px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+.sec4-head {
+    text-align: center;
+}
+
+.sec4-head h2 {
+    padding: 20px;
+    font-size: 72px;
+    letter-spacing: 7px;
+    line-height: 84px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.sec4-head p {
+    font-size: 21px;
+    letter-spacing: 4px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.design {
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.sec4-img {
+    margin: 30px;
+    z-index: 1;
+}
+
+
+.tp-h2 {
+
+    padding: 40px;
+    width: 346px;
+    background-color: #3e5831;
+}
+
+.sec4-img h2 {
+    font-size: 25px;
+    width: 346px;
+    letter-spacing: 3px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-transform: capitalize;
+
+}
+
+.sec4-img span {
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-transform: capitalize;
+}
+
+.tp-h2 {
+    bottom: 15px;
+    left: 8px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.sec4-txt p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 29px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding-bottom: 100px;
+}
+
+.design3 {
+    top: -82px;
+    width: 100%;
+}
+
+.yellow-backg {
+    background-color: #dd982c;
+    /* height: 100vh; */
+    z-index: 1;
+}
+
+.str-dsi img {
+    width: 25%;
+    left: -295px;
+}
+
+
+.overflow {
+    overflow: hidden;
+}
+
+.str-dsi2 img {
+    width: 25%;
+    right: -295px;
+
+}
+
+
+.sec5-img {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-left: 40px;
+}
+
+.padding {
+    padding: 100px 0;
+}
+
+.sec5-img img {
+    margin-left: -70px;
+    margin-top: -114px;
+    object-fit: contain;
+    width: 900px;
+    height: 900px;
+    object-position: 100% 0;
+
+}
+
+.sec5-txt {
+    margin: 100px 40px;
+
+}
+
+.sec5-txt h2 {
+    font-size: 37px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.sec5-txt p {
+    padding: 25px 0;
+    width: 480px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.sec6-head h2 {
+    padding: 15px;
+    font-size: 60px;
+    width: 100%;
+    line-height: 105px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+    text-align: center;
+
+}
+
+.sec6-head p {
+    padding: 20px 0;
+    font-size: 21px;
+    line-height: 43px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.sec6-head span {
+    padding-bottom: 50px;
+    font-size: 29px;
+    line-height: 33px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Poppins";
+    text-align: center;
+    text-transform: capitalize;
+    display: block;
+}
+
+
+
+.sec7-head h2 {
+    font-size: 97px;
+    color: #537942;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.sec7-head p {
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 58px;
+    color: #537942;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.sec7-head span {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #537942;
+    font-weight: 400;
+    font-family: "Poppins";
+    display: block;
+
+}
+
+.y-backg {
+    background-color: #e6ca48;
+}
+
+.padding2 {
+    padding: 60px 0 0 0;
+}
+
+.sec7-dsi {
+    overflow-x: hidden;
+}
+
+.sec7-dsi img {
+    width: 100%;
+}
+
+
+/* .sec8-mlist {
+    padding: 71px;
+} */
+
+.sec8-menu1 {
+    width: 300px;
+}
+
+.sec8-menu1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.sec8-mlist1 h2 {
+    font-size: 35px;
+    letter-spacing: -1px;
+    line-height: 39px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: "Poppins";
+    width: 200px;
+
+}
+
+.sec8-mlist1 p {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+
+.sec9-head h2 {
+    padding: 15px 0;
+    font-size: 60px;
+    color: #68914f;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec9-head p {
+    padding: 20px 0;
+    font-size: 25px;
+    color: #658e4d;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.email {
+    width: 100%;
+    /* width: 600px; */
+    margin: 0 auto;
+}
+
+.email input {
+    padding: 10px 20px;
+    border-color: #537543;
+    width: 100%;
+    border-radius: 18px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.subscribe {
+
+    width: 100%;
+    /* width: 500px; */
+    margin: 0 auto;
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+
+.subscribe button {
+    padding: 5px 0;
+    width: 100%;
+    /* width: 600px; */
+    border-radius: 18px;
+    border: hidden;
+    background-color: #537543;
+}
+
+.subscribe a {
+    font-size: 33px;
+    letter-spacing: 3px;
+    line-height: 31px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+.title h2 {
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+}
+
+.title p {
+    font-size: 25px;
+    width: 600px;
+    padding: 20px 0;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+.social-icon ul li {
+    display: inline-block;
+}
+
+.social-icon i {
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+}
+
+.sec10-list h2 {
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Berkshire Swash";
+    text-transform: capitalize;
+}
+
+.sec10-list ul li {
+    list-style: none;
+}
+
+
+.sec10-list a {
+    font-size: 25px;
+    line-height: 44px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.space {
+    padding: 100px 0;
+}

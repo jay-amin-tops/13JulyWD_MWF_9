@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-menu ul li {
+            display: inline-block;
+            padding: 0 30px;
+        }
+
+        .main-menu {
+            display: none;
+
+        }
+
+        .active.main-menu {
+            display: block;
+
+        }
+
+        .active .main-menu {
+            display: block;
+            background-color: aquamarine;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 70px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="main-menu">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <button class="bar">
+                <i class="fa-solid fa-2x fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <script>
+        let bar = document.querySelector(".bar");
+        let navbar = document.querySelector('.main-menu');
+
+        bar.addEventListener("click", () => {
+            bar.classList.toggle("active");
+            navbar.classList.toggle('active')
+        });
+        let btn = document.querySelector(".bar");
+        let icon = btn.querySelector(".fa-bars");
+        btn.onclick = function () {
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.replace("fa-bars", "fa-times");
+            } else {
+                icon.classList.replace("fa-times", "fa-bars");
+            }
+        }
+    </script>
+</body>
+
+</html>

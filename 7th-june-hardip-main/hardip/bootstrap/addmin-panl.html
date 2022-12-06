@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css" />
+    <link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <!-- <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js">
+    </script>
+
+    <style>
+        /* body {
+            margin: 0;
+            overflow: hidden;
+            background: #152B39;
+            font-family: Courier, monospace;
+            font-size: 14px;
+            color: #ccc;
+        } */
+
+        .progress-h2 p {
+            font-size: 18px gray;
+            text-transform: capitalize;
+        }
+
+        .wrapper {
+            display: block;
+            margin: 5em auto;
+            border: 1px solid #555;
+            width: 100%;
+            /* height: 350px; */
+            position: relative;
+        }
+
+        .wrapper canvas {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .label {
+            height: 1em;
+            padding: .3em;
+            background: rgba(255, 255, 255, .8);
+            position: absolute;
+            display: none;
+            color: #333;
+
+        }
+
+        #donut-chart {
+            width: 100%;
+        }
+
+        #donut-chart svg {
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Menu</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-speedometer2"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
+                        </li>
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi-bootstrap"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span>
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span>
+                                        2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
+                                class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1">loser</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        <div class="col py-3  ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item " href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled text-white " href="#" tabindex="-1"
+                                    aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-lg container-md mb-3">
+                <div class="row">
+
+                    <div class="card col-3 mx-3 my-3" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">earning-monthly</h5>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">$40.000</p>
+
+                        </div>
+                    </div>
+                    <div class="card col-3 mx-3 my-3" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">earning-monthly</h5>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">$40.000</p>
+
+                        </div>
+                    </div>
+                    <div class="card col-3 mx-3 my-3" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">earning-monthly</h5>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">$40.000</p>
+
+                        </div>
+                    </div>
+                    <div class="card col-3 mx-3 my-3" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">earning-monthly</h5>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">$40.000</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid container-lg container-md">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <div class="wrapper">
+                                    <canvas id='c'></canvas>
+                                    <div class="label">text</div>
+                                </div>
+                                <p>Please mouse over the dots</p>
+                                <script>
+                                    var label = document.querySelector(".label");
+                                    var c = document.getElementById("c");
+                                    var ctx = c.getContext("2d");
+                                    var cw = c.width = 700;
+                                    var ch = c.height = 350;
+                                    var cx = cw / 2,
+                                        cy = ch / 2;
+                                    var rad = Math.PI / 180;
+                                    var frames = 0;
+
+                                    ctx.lineWidth = 1;
+                                    ctx.strokeStyle = "#999";
+                                    ctx.fillStyle = "#ccc";
+                                    ctx.font = "14px monospace";
+
+                                    var grd = ctx.createLinearGradient(0, 0, 0, cy);
+                                    grd.addColorStop(0, "hsla(167,72%,60%,1)");
+                                    grd.addColorStop(1, "hsla(167,72%,60%,0)");
+
+                                    var oData = {
+                                        "2008": 10,
+                                        "2009": 39.9,
+                                        "2010": 17,
+                                        "2011": 30.0,
+                                        "2012": 5.3,
+                                        "2013": 38.4,
+                                        "2014": 15.7,
+                                        "2015": 9.0
+                                    };
+
+                                    var valuesRy = [];
+                                    var propsRy = [];
+                                    for (var prop in oData) {
+
+                                        valuesRy.push(oData[prop]);
+                                        propsRy.push(prop);
+                                    }
+
+
+                                    var vData = 4;
+                                    var hData = valuesRy.length;
+                                    var offset = 50.5; //offset chart axis
+                                    var chartHeight = ch - 2 * offset;
+                                    var chartWidth = cw - 2 * offset;
+                                    var t = 1 / 7; // curvature : 0 = no curvature 
+                                    var speed = 2; // for the animation
+
+                                    var A = {
+                                        x: offset,
+                                        y: offset
+                                    }
+                                    var B = {
+                                        x: offset,
+                                        y: offset + chartHeight
+                                    }
+                                    var C = {
+                                        x: offset + chartWidth,
+                                        y: offset + chartHeight
+                                    }
+
+                                    /*
+                                          A  ^
+                                            |  |  
+                                            + 25
+                                            |
+                                            |
+                                            |
+                                            + 25  
+                                          |__|_________________________________  C
+                                          B
+                                    */
+
+                                    // CHART AXIS -------------------------
+                                    ctx.beginPath();
+                                    ctx.moveTo(A.x, A.y);
+                                    ctx.lineTo(B.x, B.y);
+                                    ctx.lineTo(C.x, C.y);
+                                    ctx.stroke();
+
+                                    // vertical ( A - B )
+                                    var aStep = (chartHeight - 50) / (vData);
+
+                                    var Max = Math.ceil(arrayMax(valuesRy) / 10) * 10;
+                                    var Min = Math.floor(arrayMin(valuesRy) / 10) * 10;
+                                    var aStepValue = (Max - Min) / (vData);
+                                    console.log("aStepValue: " + aStepValue); //8 units
+                                    var verticalUnit = aStep / aStepValue;
+
+                                    var a = [];
+                                    ctx.textAlign = "right";
+                                    ctx.textBaseline = "middle";
+                                    for (var i = 0; i <= vData; i++) {
+
+                                        if (i == 0) {
+                                            a[i] = {
+                                                x: A.x,
+                                                y: A.y + 25,
+                                                val: Max
+                                            }
+                                        } else {
+                                            a[i] = {}
+                                            a[i].x = a[i - 1].x;
+                                            a[i].y = a[i - 1].y + aStep;
+                                            a[i].val = a[i - 1].val - aStepValue;
+                                        }
+                                        drawCoords(a[i], 3, 0);
+                                    }
+
+                                    //horizontal ( B - C )
+                                    var b = [];
+                                    ctx.textAlign = "center";
+                                    ctx.textBaseline = "hanging";
+                                    var bStep = chartWidth / (hData + 1);
+
+                                    for (var i = 0; i < hData; i++) {
+                                        if (i == 0) {
+                                            b[i] = {
+                                                x: B.x + bStep,
+                                                y: B.y,
+                                                val: propsRy[0]
+                                            };
+                                        } else {
+                                            b[i] = {}
+                                            b[i].x = b[i - 1].x + bStep;
+                                            b[i].y = b[i - 1].y;
+                                            b[i].val = propsRy[i]
+                                        }
+                                        drawCoords(b[i], 0, 3)
+                                    }
+
+                                    function drawCoords(o, offX, offY) {
+                                        ctx.beginPath();
+                                        ctx.moveTo(o.x - offX, o.y - offY);
+                                        ctx.lineTo(o.x + offX, o.y + offY);
+                                        ctx.stroke();
+
+                                        ctx.fillText(o.val, o.x - 2 * offX, o.y + 2 * offY);
+                                    }
+                                    //----------------------------------------------------------
+
+                                    // DATA
+                                    var oDots = [];
+                                    var oFlat = [];
+                                    var i = 0;
+
+                                    for (var prop in oData) {
+                                        oDots[i] = {}
+                                        oFlat[i] = {}
+
+                                        oDots[i].x = b[i].x;
+                                        oFlat[i].x = b[i].x;
+
+                                        oDots[i].y = b[i].y - oData[prop] * verticalUnit - 25;
+                                        oFlat[i].y = b[i].y - 25;
+
+                                        oDots[i].val = oData[b[i].val];
+
+                                        i++
+                                    }
+
+
+
+                                    ///// Animation Chart ///////////////////////////
+                                    //var speed = 3;
+                                    function animateChart() {
+                                        requestId = window.requestAnimationFrame(animateChart);
+                                        frames += speed; //console.log(frames)
+                                        ctx.clearRect(60, 0, cw, ch - 60);
+
+                                        for (var i = 0; i < oFlat.length; i++) {
+                                            if (oFlat[i].y > oDots[i].y) {
+                                                oFlat[i].y -= speed;
+                                            }
+                                        }
+                                        drawCurve(oFlat);
+                                        for (var i = 0; i < oFlat.length; i++) {
+                                            ctx.fillText(oDots[i].val, oFlat[i].x, oFlat[i].y - 25);
+                                            ctx.beginPath();
+                                            ctx.arc(oFlat[i].x, oFlat[i].y, 3, 0, 2 * Math.PI);
+                                            ctx.fill();
+                                        }
+
+                                        if (frames >= Max * verticalUnit) {
+                                            window.cancelAnimationFrame(requestId);
+
+                                        }
+                                    }
+                                    requestId = window.requestAnimationFrame(animateChart);
+
+                                    /////// EVENTS //////////////////////
+                                    c.addEventListener("mousemove", function (e) {
+                                        label.innerHTML = "";
+                                        label.style.display = "none";
+                                        this.style.cursor = "default";
+
+                                        var m = oMousePos(this, e);
+                                        for (var i = 0; i < oDots.length; i++) {
+
+                                            output(m, i);
+                                        }
+
+                                    }, false);
+
+                                    function output(m, i) {
+                                        ctx.beginPath();
+                                        ctx.arc(oDots[i].x, oDots[i].y, 20, 0, 2 * Math.PI);
+                                        if (ctx.isPointInPath(m.x, m.y)) {
+                                            //console.log(i);
+                                            label.style.display = "block";
+                                            label.style.top = (m.y + 10) + "px";
+                                            label.style.left = (m.x + 10) + "px";
+                                            label.innerHTML = "<strong>" + propsRy[i] + "</strong>: " + valuesRy[i] + "%";
+                                            c.style.cursor = "pointer";
+                                        }
+                                    }
+
+                                    // CURVATURE
+                                    function controlPoints(p) {
+                                        // given the points array p calculate the control points
+                                        var pc = [];
+                                        for (var i = 1; i < p.length - 1; i++) {
+                                            var dx = p[i - 1].x - p[i + 1].x; // difference x
+                                            var dy = p[i - 1].y - p[i + 1].y; // difference y
+                                            // the first control point
+                                            var x1 = p[i].x - dx * t;
+                                            var y1 = p[i].y - dy * t;
+                                            var o1 = {
+                                                x: x1,
+                                                y: y1
+                                            };
+
+                                            // the second control point
+                                            var x2 = p[i].x + dx * t;
+                                            var y2 = p[i].y + dy * t;
+                                            var o2 = {
+                                                x: x2,
+                                                y: y2
+                                            };
+
+                                            // building the control points array
+                                            pc[i] = [];
+                                            pc[i].push(o1);
+                                            pc[i].push(o2);
+                                        }
+                                        return pc;
+                                    }
+
+                                    function drawCurve(p) {
+
+                                        var pc = controlPoints(p); // the control points array
+
+                                        ctx.beginPath();
+                                        //ctx.moveTo(p[0].x, B.y- 25);
+                                        ctx.lineTo(p[0].x, p[0].y);
+                                        // the first & the last curve are quadratic Bezier
+                                        // because I'm using push(), pc[i][1] comes before pc[i][0]
+                                        ctx.quadraticCurveTo(pc[1][1].x, pc[1][1].y, p[1].x, p[1].y);
+
+                                        if (p.length > 2) {
+                                            // central curves are cubic Bezier
+                                            for (var i = 1; i < p.length - 2; i++) {
+                                                ctx.bezierCurveTo(pc[i][0].x, pc[i][0].y, pc[i + 1][1].x, pc[i + 1][1].y, p[i + 1].x, p[i + 1].y);
+                                            }
+                                            // the first & the last curve are quadratic Bezier
+                                            var n = p.length - 1;
+                                            ctx.quadraticCurveTo(pc[n - 1][0].x, pc[n - 1][0].y, p[n].x, p[n].y);
+                                        }
+
+                                        //ctx.lineTo(p[p.length-1].x, B.y- 25);
+                                        ctx.stroke();
+                                        ctx.save();
+                                        ctx.fillStyle = grd;
+                                        ctx.fill();
+                                        ctx.restore();
+                                    }
+
+                                    function arrayMax(array) {
+                                        return Math.max.apply(Math, array);
+                                    };
+
+                                    function arrayMin(array) {
+                                        return Math.min.apply(Math, array);
+                                    };
+
+                                    function oMousePos(canvas, evt) {
+                                        var ClientRect = canvas.getBoundingClientRect();
+                                        return { //objeto
+                                            x: Math.round(evt.clientX - ClientRect.left),
+                                            y: Math.round(evt.clientY - ClientRect.top)
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-xs-12 text-center">
+                                    <h2>Donut Chart</h2>
+                                </div>
+
+                                <div id="donut-chart" style="height:26rem ;"></div>
+
+                                <script>
+                                    var chart = bb.generate({
+                                        data: {
+                                            columns: [
+                                                ["Blue", 2],
+                                                ["orange", 4],
+                                                ["green", 3],
+                                            ],
+                                            type: "donut",
+                                            onclick: function (d, i) {
+                                                console.log("onclick", d, i);
+                                            },
+                                            onover: function (d, i) {
+                                                console.log("onover", d, i);
+                                            },
+                                            onout: function (d, i) {
+                                                console.log("onout", d, i);
+                                            },
+                                        },
+                                        donut: {
+                                            title: "70",
+                                        },
+                                        bindto: "#donut-chart",
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-3">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body progress-h2">
+                                <p>server migration</p>
+                                <div class="progress my-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p>sales tracking</p>
+                                <div class="progress my-3">
+
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p>customer database</p>
+                                <div class="progress my-3">
+
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p>payout Detailes</p>
+                                <div class="progress my-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-5 mx-auto ">
+                                        <div class="row">
+                                            <div class="card my-2 bg-primary">
+                                                <div class="card-body ">
+                                                    <p>primary</p>
+                                                    <span>#4e73df</span>
+                                                </div>
+                                            </div>
+                                            <div class="card my-2 bg-info">
+                                                <div class="card-body">
+                                                    <p>info</p>
+                                                    <span>#36b9cc</span>
+                                                </div>
+                                            </div>
+                                            <div class="card my-2 bg-danger">
+                                                <div class="card-body">
+                                                    <p>danger</p>
+                                                    <span>#e74a3b</span>
+                                                </div>
+                                            </div>
+                                            <div class="card my-2 bg-light">
+                                                <div class="card-body">
+                                                    <p>light</p>
+                                                    <span>#f8f9fc</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 mx-auto ">
+                                        <div class="row">
+                                            <div class="card my-2 bg-success">
+                                                <div class="card-body">
+                                                    <p>sucess</p>
+                                                    <span>#1cc88a</span>
+                                                </div>
+                                            </div>
+                                            <div class="card my-2 bg-warning">
+                                                <div class="card-body">
+                                                    <p>warning</p>
+                                                    <span>#f6c23e</span>
+                                                </div>
+                                            </div>
+                                            <div class="card my-2 bg-secondary">
+                                                <div class="card-body">
+                                                    <p>secondary</p>
+                                                    <span>#858796</span>
+                                                </div>
+                                            </div>
+                                            <div class="card my-2 bg-success">
+                                                <div class="card-body">
+                                                    <p>sucess</p>
+                                                    <span>#5a5c69</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <img src="../bootstrap/assets/undraw_posting_photo.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Add some quality, svg illustrations to your project courtesy of
+                                    unDraw, a constanty updated collection of beautiful svg images that you can use
+                                    completely free and without attribution!</p>
+                            </div>
+
+                        </div>
+                        <div class="card my-3">
+                            <div class="card">
+                                <div class="card-body" style="height: 22rem;">
+                                    <h5 class="card-title">development approch</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                    <p class="card-text my-auto">SB Admin 2 makes extensive use of Bootstrap 4
+                                        utility
+                                        classes in order to reduce CSS bloat and poor page performance. Custom CSS
+                                        classes are used to create custom components and custom utility classes.
+
+                                        Before working with this theme, you should become familiar with the
+                                        Bootstrap framework, especially the utility classes.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    x
+</body>
+
+</html>

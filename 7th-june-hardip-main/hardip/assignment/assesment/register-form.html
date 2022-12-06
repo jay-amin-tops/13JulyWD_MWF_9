@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+    <style>
+        /* * {
+            border: 1px solid;
+        } */
+
+        table {
+            align-items: center;
+            width: 100%;
+            background-color: rgba(235, 234, 234, 0.781);
+        }
+
+        table tr td input {
+            display: inline;
+            width: 50%;
+            /* padding: 5px 0; */
+        }
+
+        table tr td:nth-child(1) {
+            width: 10%;
+        }
+
+        table tr td:nth-child(2) {
+            width: 90%;
+        }
+
+        p {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        textarea {
+            width: 50%;
+        }
+
+        .register {
+            background-color: rgb(18, 185, 18);
+            border: none;
+        }
+
+
+
+        .inpw input {
+            width: 10px;
+            display: inline-block;
+        }
+
+
+
+        [type="checkbox"] {
+            vertical-align: middle;
+        }
+
+        /* #success {
+            color: green;
+            position: absolute;
+            animation: buttons.3s linear;
+            display: none;
+        }
+
+        #danger {
+            color: red;
+            position: absolute;
+            animation: buttons.3s linear;
+            display: none;
+        }
+
+        @keyframes buttons {
+            0% {
+                transform: scale(0.1);
+            }
+
+            50% {
+                transform: scale(0.5);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        } */
+    </style>
+
+</head>
+
+<body>
+
+
+    <table>
+        <tr>
+            <td><label for="#">first name</label></td>
+            <td><input onblur="checkreq(this,'firstnameEror','Enter your first name')" type="text" id="name"
+                    placeholder="Enter your first name">
+                <span id="firstnameEror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="#">last name</label></td>
+            <td><input id="lastname" onblur="checkreq(this,'lastnameEror','Enter your last name')" type="text"
+                    placeholder="Enter your last name">
+                <span id="lastnameEror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="#">email</label></td>
+            <td><input id="email" onblur="checkreq(this,'emaileror','Enter valid email')" onblur="checkemail(this)"
+                    type="email" placeholder="it should contain @">
+                <span id="emaileror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="#">mobile</label></td>
+            <td><input id="mobilenumber" onblur="checkreq(this,'mobileEror','Enter valid 10 digit mobil number')"
+                    type="tel" placeholder="only 10 digits are allowed">
+                <span id="mobileEror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="#">gender</label></td>
+
+            <td>
+                <p>
+                    <input type="radio" name="gender" value="male">male
+                    <input type="radio" name="gender" value="female">female
+                </p>
+                <span id="genderEror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">date of birth</label>
+            </td>
+            <td>
+                <input onblur="checkreq(this,'dateEror','enter your  birth date')" type="date" name="" id="">
+                <span id="dateEror">*</span>
+
+            </td>
+        </tr>
+        <tr>
+            <td><label for="#">address</label></td>
+            <td><textarea id="address" onblur="checkreq(this,'addreeEror','add your addrees')" name="address" id="msg"
+                    cols="30" rows="10"></textarea>
+                <span id="addreeEror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">city</label>
+            </td>
+            <td><input id="city" onblur="checkreq(this,'cityEror','enter your city')" type="text" name="" id="">
+                <span id="cityEror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">area pin</label>
+            </td>
+            <td><input id="area" onblur="checkreq(this,'pinEror','enter your pin')" type="text" name="" id="">
+                <span id="pinEror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">state</label>
+            </td>
+            <td><input id="state" onblur="checkreq(this,'stateEror','enter your state')" type="text" name="" id="">
+                <span id="stateEror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">qualification</label>
+            </td>
+            <td>
+                <select id="qualification" onblur="checkreq(this,'quliEror','select qualification')"
+                    name="select:qualification" id="">
+                    <option value="">10th pass</option>
+                    <option value="">12th pass</option>
+                    <option value="">diploma</option>
+                    <option value="">graduate</option>
+                    <option value="">post graduate</option>
+                </select>
+                <span id="quliEror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="#">specialisation</label>
+            </td>
+            <td>
+                <p onblur="checkreq(this,'specialEror','select education')">
+                <div class="inpw">
+
+                    <input type="checkbox" name="computer science" id="">
+                    <label style="text-align:right ;" for="#">computer
+                        science</label> <br>
+
+                    <!-- <label for="#">computer science</label> -->
+                    <!-- </span> -->
+
+                    <input type="checkbox" name="computer science" id=""><label for="#">information
+                        technology</label><br>
+                    <input type="checkbox" name="computer science" id=""><label for="#">computer
+                        architechnology</label><br>
+                    <input type="checkbox" name="computer science" id=""><label for="#">tele communication</label><br>
+                </div>
+                </p>
+                <span id="specialEror">*</span>
+
+            </td>
+        </tr>
+        <tr>
+            <td><label for="#">password</label></td>
+            <td><input id="password" onblur="checkreq(this,'passwordEror','enter 8 digit password')" type="password"
+                    name="" id="">
+                <span id="passwordEror">*</span>
+            </td>
+        </tr>
+        <tr>
+            <!-- <td><input class="register" type="submit" onclick="message()" name="register" id="submit" value="register">
+            </td> -->
+            <td><button class="register" type="submit" onclick="message()" name="register" id="submit">submit</button>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <script>
+        function checkemail(something) {
+            // console.log(something);
+            RegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            console.log(RegEx.test(something.value));
+            if (RegEx.test(something.value)) {
+                document.getElementById("emailError").innerHTML = ""
+            } else {
+                document.getElementById("emailError").innerHTML = "invalid Format"
+
+            }
+        }
+        function checkreq(e, spn, msg) {
+            if (e.value == "") {
+
+                document.getElementById(spn).innerText = msg;
+
+            } else {
+                document.getElementById(spn).innerText = "";
+            }
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

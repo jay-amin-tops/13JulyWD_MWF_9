@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="deteach">deteach</button>
+    <button id="add">add</button>
+    <button id="empty">empty</button>
+    <p id="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, reiciendis minus nisi a distinctio
+        delectus. Totam
+        suscipit cumque iste possimus.</p>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        // function hidedata() {
+        //     // $("#data").hide(); // hide data directly
+        //     $("#data").fadeOut();//hide data slowely
+        //     console.log("called");
+        // }
+        $("#hide").click(function () {
+            console.log("hide");
+            $("#data").hide();
+        })
+        $("#show").click(function () {
+            $("#data").show();
+            console.log("show");
+        })
+
+        $("#deteach").click(function () {
+            $("#data").detach();
+            console.log("deteach");
+        })
+
+        $("#add").click(function () {
+            $("#data").add();
+            console.log("add");
+        })
+        $("#empty").click(function () {
+            $("#data").empty();
+        })
+    </script>
+</body>
+
+</html>

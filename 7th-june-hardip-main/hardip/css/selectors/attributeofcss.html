@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        a[title]{
+            border: 2px solid orange;
+        }
+
+
+
+        a[href="https://www.tops-int.com"] {
+            font-weight: bolder;}
+
+
+
+        a[href*="example"]{
+            font-size: 2pc;
+        }
+
+
+        a[href$=".in"]{font-style: italic;background:linear-gradient(orange,white,green) ;}
+
+
+        a[class="logo" ]{padding: 2px;
+        font-size: 36px;}
+
+
+    </style>
+</head>
+<body>
+    <a href="#">click here</a>
+    <a href="https://www.tops-int.com">website title</a>
+    <a accesskey="h" title="alt+h" href="https://www.google.com">Google</a>
+    <a href="example">About</a>
+    <a href="https://www.example.com">contact</a>
+    <a href="https://www.india.in">india</a>
+    <a href="https://www.inexample.com">contact</a>
+    <a class="logo" href="#">MySite</a>
+</body>
+</html>

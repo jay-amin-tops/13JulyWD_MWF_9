@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider img {
+            width: 100%;
+            /* position: absolute; */
+        }
+
+        .slider {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <img class="
+        slider-img" src="images/images (1).jpg" alt="">
+        <img class="
+        slider-img" src="images/images.jpg" alt="">
+        <img class="
+        slider-img" src="images/mountains287618_1920.jpg" alt="">
+        <img class="
+        slider-img" src="images/pyrenees351267_1920.jpg" alt="">
+    </div>
+    <script>
+        let slider_data = document.getElementsByClassName("slider-img")
+        let count = 0
+        console.log(slider_data);
+        function slider() {
+
+            for (let index = 0; index < slider_data.length; index++) {
+                console.log(slider_data[index]);
+                slider_data[index].style.display = "none"
+
+            }
+            console.log("called");
+
+            slider_data[count].style.display = "block"
+            count++
+            setTimeout(slider, 3000)
+        }
+        slider();
+
+    </script>
+
+
+
+
+
+
+    <!-- <script>
+        let SliderImageData
+            = document.getElementsByC1assName("slider-img");
+        let count = 0
+        console.log(SliderImageData);
+        function Slider() {
+            for (let index = 0; index < SliderImageData.length; index++) {
+                console.log(SliderImageData[index])
+                SliderImageData[index].style.display = "none"
+            }
+
+
+            console - log("called");
+            SliderImageData[count].style.display = "block"
+            count++
+            setTimeout(Slider, 3000);
+        }
+        Slider();
+    </script> -->
+</body>
+
+</html>
