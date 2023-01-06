@@ -37,7 +37,7 @@
                     <!-- <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" id="email" required> <span>*</span> -->
                     <!-- <input type="email" onkeydown="checkemail(this)" name="email" id="email" required> <span>*</span> -->
                     <!-- <input type="email" onkeypress="checkemail(this)" name="email" id="email" required> <span>*</span> -->
-                    <input type="email" onkeyup="checkemail(this)" name="email" id="email" required> <span
+                    <input type="email" onkeyup="checkemail(this,'emailError')" name="email" id="email" required> <span
                         id="emailError">*</span>
                 </td>
             </tr>
@@ -46,8 +46,7 @@
                 <td>
                     <!-- <input type="tel" onkeypress="console.log(event)" name="mobile" id="mobile" required> <span>*</span> -->
                     <!-- <input type="tel" onkeypress="console.log(event.which)" name="mobile" id="mobile" required> <span>*</span> -->
-                    <input type="tel" onkeypress="return (event.which >= 48 && event.which <= 57)" name="mobile"
-                        id="mobile" required> <span>*</span>
+                    <input type="tel" onkeypress="return (event.which >= 48 && event.which <= 57)" name="mobile" id="mobile" required> <span>*</span>
                 </td>
             </tr>
             <tr>
@@ -60,17 +59,20 @@
 
     </form>
     <script>
-        function checkemail(anything) {
+        function checkemail(anything,spnid) {
             // console.log(anything);
             // console.log(anything);
             // console.log(this);
 
-            RegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            koibhi = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            RegData = /^[a-zA-Z]+$/
+            RegData = /^[0-9]+$/
+            RegData = /^([0-9a-zA-Z])+\@([a-zA-Z])+$/
             // console.log(RegEx.test(anything.value));
-            if (RegEx.test(anything.value)) {
-                document.getElementById("emailError").innerHTML = ""
+            if (koibhi.test(anything.value)) {
+                document.getElementById(spnid).innerHTML = ""
             } else {
-                document.getElementById("emailError").innerHTML = "Invalid Format"
+                document.getElementById(spnid).innerHTML = "Invalid Format"
             }
         }
         function checkreq(inp, spanid) {
@@ -90,6 +92,7 @@
                 // document.getElementById("usernameError").innerHTML = "";
             }
         }
+        fetch("apiurl").then((resposen)=>resposen.json()).then((res)=>{ console.log(res); })
     </script>
 </body>
 
